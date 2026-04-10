@@ -1,0 +1,1348 @@
+[
+  {
+    "nombre": "México",
+    "tipo_sistema": "PAIS",
+    "tipo_real": "País",
+    "nivel": 1,
+    "pais_codigo": "MX",
+    "codigo_oficial": "MX",
+    "children": [
+      {
+        "nombre": "Aguascalientes",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-AGUASCALIENTES",
+        "children": [
+          {
+            "nombre": "Aguascalientes",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-AGUASCALIENTES-AGUASCALIENTES",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-AGUASCALIENTES-AGUASCALIENTES-01"
+              },
+              {
+                "nombre": "San Marcos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-AGUASCALIENTES-AGUASCALIENTES-02"
+              },
+              {
+                "nombre": "Ojocaliente",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-AGUASCALIENTES-AGUASCALIENTES-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Jesús María",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-AGUASCALIENTES-JESUS_MARIA"
+          },
+          {
+            "nombre": "Calvillo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-AGUASCALIENTES-CALVILLO"
+          }
+        ]
+      },
+      {
+        "nombre": "Baja California",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-BAJA_CALIFORNIA",
+        "children": [
+          {
+            "nombre": "Mexicali",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-BAJA_CALIFORNIA-MEXICALI"
+          },
+          {
+            "nombre": "Tijuana",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-BAJA_CALIFORNIA-TIJUANA",
+            "children": [
+              {
+                "nombre": "Zona Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-BAJA_CALIFORNIA-TIJUANA-01"
+              },
+              {
+                "nombre": "Playas de Tijuana",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-BAJA_CALIFORNIA-TIJUANA-02"
+              },
+              {
+                "nombre": "Otay",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-BAJA_CALIFORNIA-TIJUANA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Ensenada",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-BAJA_CALIFORNIA-ENSENADA"
+          }
+        ]
+      },
+      {
+        "nombre": "Baja California Sur",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-BAJA_CALIFORNIA_SUR",
+        "children": [
+          {
+            "nombre": "La Paz",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-BAJA_CALIFORNIA_SUR-LA_PAZ"
+          },
+          {
+            "nombre": "Los Cabos",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-BAJA_CALIFORNIA_SUR-LOS_CABOS"
+          },
+          {
+            "nombre": "Comondú",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-BAJA_CALIFORNIA_SUR-COMONDU"
+          }
+        ]
+      },
+      {
+        "nombre": "Campeche",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-CAMPECHE",
+        "children": [
+          {
+            "nombre": "Campeche",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-CAMPECHE-CAMPECHE"
+          },
+          {
+            "nombre": "Carmen",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-CAMPECHE-CARMEN"
+          },
+          {
+            "nombre": "Champotón",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-CAMPECHE-CHAMPOTON"
+          }
+        ]
+      },
+      {
+        "nombre": "Chiapas",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-CHIAPAS",
+        "children": [
+          {
+            "nombre": "Tuxtla Gutiérrez",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-CHIAPAS-TUXTLA_GUTIERREZ"
+          },
+          {
+            "nombre": "San Cristóbal de las Casas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-CHIAPAS-SAN_CRISTOBAL_DE_LAS_CASAS"
+          },
+          {
+            "nombre": "Tapachula",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-CHIAPAS-TAPACHULA"
+          }
+        ]
+      },
+      {
+        "nombre": "Chihuahua",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-CHIHUAHUA",
+        "children": [
+          {
+            "nombre": "Chihuahua",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-CHIHUAHUA-CHIHUAHUA"
+          },
+          {
+            "nombre": "Juárez",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-CHIHUAHUA-JUAREZ"
+          },
+          {
+            "nombre": "Delicias",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-CHIHUAHUA-DELICIAS"
+          }
+        ]
+      },
+      {
+        "nombre": "Ciudad de México",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-CIUDAD_DE_MEXICO",
+        "children": [
+          {
+            "nombre": "Álvaro Obregón",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Demarcación Territorial",
+            "nivel": 3,
+            "codigo_oficial": "MX-CIUDAD_DE_MEXICO-ALVARO_OBREGON"
+          },
+          {
+            "nombre": "Benito Juárez",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Demarcación Territorial",
+            "nivel": 3,
+            "codigo_oficial": "MX-CIUDAD_DE_MEXICO-BENITO_JUAREZ",
+            "children": [
+              {
+                "nombre": "Del Valle",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-CIUDAD_DE_MEXICO-BENITO_JUAREZ-01"
+              },
+              {
+                "nombre": "Narvarte",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-CIUDAD_DE_MEXICO-BENITO_JUAREZ-02"
+              },
+              {
+                "nombre": "Nápoles",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-CIUDAD_DE_MEXICO-BENITO_JUAREZ-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Coyoacán",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Demarcación Territorial",
+            "nivel": 3,
+            "codigo_oficial": "MX-CIUDAD_DE_MEXICO-COYOACAN"
+          },
+          {
+            "nombre": "Cuauhtémoc",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Demarcación Territorial",
+            "nivel": 3,
+            "codigo_oficial": "MX-CIUDAD_DE_MEXICO-CUAUHTEMOC",
+            "children": [
+              {
+                "nombre": "Roma Norte",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-CIUDAD_DE_MEXICO-CUAUHTEMOC-01"
+              },
+              {
+                "nombre": "Condesa",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-CIUDAD_DE_MEXICO-CUAUHTEMOC-02"
+              },
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-CIUDAD_DE_MEXICO-CUAUHTEMOC-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Iztapalapa",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Demarcación Territorial",
+            "nivel": 3,
+            "codigo_oficial": "MX-CIUDAD_DE_MEXICO-IZTAPALAPA",
+            "children": [
+              {
+                "nombre": "Santa Martha Acatitla",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-CIUDAD_DE_MEXICO-IZTAPALAPA-01"
+              },
+              {
+                "nombre": "San Lorenzo Tezonco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-CIUDAD_DE_MEXICO-IZTAPALAPA-02"
+              },
+              {
+                "nombre": "Ermita Zaragoza",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-CIUDAD_DE_MEXICO-IZTAPALAPA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Miguel Hidalgo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Demarcación Territorial",
+            "nivel": 3,
+            "codigo_oficial": "MX-CIUDAD_DE_MEXICO-MIGUEL_HIDALGO"
+          }
+        ]
+      },
+      {
+        "nombre": "Coahuila",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-COAHUILA",
+        "children": [
+          {
+            "nombre": "Saltillo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-COAHUILA-SALTILLO"
+          },
+          {
+            "nombre": "Torreón",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-COAHUILA-TORREON"
+          },
+          {
+            "nombre": "Monclova",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-COAHUILA-MONCLOVA"
+          }
+        ]
+      },
+      {
+        "nombre": "Colima",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-COLIMA",
+        "children": [
+          {
+            "nombre": "Colima",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-COLIMA-COLIMA"
+          },
+          {
+            "nombre": "Manzanillo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-COLIMA-MANZANILLO"
+          },
+          {
+            "nombre": "Tecomán",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-COLIMA-TECOMAN"
+          }
+        ]
+      },
+      {
+        "nombre": "Durango",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-DURANGO",
+        "children": [
+          {
+            "nombre": "Durango",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-DURANGO-DURANGO"
+          },
+          {
+            "nombre": "Gómez Palacio",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-DURANGO-GOMEZ_PALACIO"
+          },
+          {
+            "nombre": "Lerdo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-DURANGO-LERDO"
+          }
+        ]
+      },
+      {
+        "nombre": "Guanajuato",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-GUANAJUATO",
+        "children": [
+          {
+            "nombre": "León",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-GUANAJUATO-LEON",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-GUANAJUATO-LEON-01"
+              },
+              {
+                "nombre": "Jardines del Moral",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-GUANAJUATO-LEON-02"
+              },
+              {
+                "nombre": "San Juan Bosco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-GUANAJUATO-LEON-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Irapuato",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-GUANAJUATO-IRAPUATO"
+          },
+          {
+            "nombre": "Celaya",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-GUANAJUATO-CELAYA"
+          },
+          {
+            "nombre": "Guanajuato",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-GUANAJUATO-GUANAJUATO"
+          }
+        ]
+      },
+      {
+        "nombre": "Guerrero",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-GUERRERO",
+        "children": [
+          {
+            "nombre": "Acapulco de Juárez",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-GUERRERO-ACAPULCO_DE_JUAREZ"
+          },
+          {
+            "nombre": "Chilpancingo de los Bravo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-GUERRERO-CHILPANCINGO_DE_LOS_BRAVO"
+          },
+          {
+            "nombre": "Iguala de la Independencia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-GUERRERO-IGUALA_DE_LA_INDEPENDENCIA"
+          }
+        ]
+      },
+      {
+        "nombre": "Hidalgo",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-HIDALGO",
+        "children": [
+          {
+            "nombre": "Pachuca de Soto",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-HIDALGO-PACHUCA_DE_SOTO"
+          },
+          {
+            "nombre": "Tulancingo de Bravo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-HIDALGO-TULANCINGO_DE_BRAVO"
+          },
+          {
+            "nombre": "Tula de Allende",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-HIDALGO-TULA_DE_ALLENDE"
+          }
+        ]
+      },
+      {
+        "nombre": "Jalisco",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-JALISCO",
+        "children": [
+          {
+            "nombre": "Guadalajara",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-JALISCO-GUADALAJARA",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-JALISCO-GUADALAJARA-01"
+              },
+              {
+                "nombre": "Americana",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-JALISCO-GUADALAJARA-02"
+              },
+              {
+                "nombre": "Providencia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-JALISCO-GUADALAJARA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Zapopan",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-JALISCO-ZAPOPAN"
+          },
+          {
+            "nombre": "Tlaquepaque",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-JALISCO-TLAQUEPAQUE"
+          },
+          {
+            "nombre": "Tonalá",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-JALISCO-TONALA"
+          },
+          {
+            "nombre": "Puerto Vallarta",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-JALISCO-PUERTO_VALLARTA"
+          }
+        ]
+      },
+      {
+        "nombre": "Estado de México",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-ESTADO_DE_MEXICO",
+        "children": [
+          {
+            "nombre": "Toluca",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-ESTADO_DE_MEXICO-TOLUCA"
+          },
+          {
+            "nombre": "Naucalpan de Juárez",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-ESTADO_DE_MEXICO-NAUCALPAN_DE_JUAREZ"
+          },
+          {
+            "nombre": "Ecatepec de Morelos",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-ESTADO_DE_MEXICO-ECATEPEC_DE_MORELOS"
+          },
+          {
+            "nombre": "Tlalnepantla de Baz",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-ESTADO_DE_MEXICO-TLALNEPANTLA_DE_BAZ"
+          }
+        ]
+      },
+      {
+        "nombre": "Michoacán",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-MICHOACAN",
+        "children": [
+          {
+            "nombre": "Morelia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-MICHOACAN-MORELIA"
+          },
+          {
+            "nombre": "Uruapan",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-MICHOACAN-URUAPAN"
+          },
+          {
+            "nombre": "Zamora",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-MICHOACAN-ZAMORA"
+          }
+        ]
+      },
+      {
+        "nombre": "Morelos",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-MORELOS",
+        "children": [
+          {
+            "nombre": "Cuernavaca",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-MORELOS-CUERNAVACA"
+          },
+          {
+            "nombre": "Jiutepec",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-MORELOS-JIUTEPEC"
+          },
+          {
+            "nombre": "Temixco",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-MORELOS-TEMIXCO"
+          }
+        ]
+      },
+      {
+        "nombre": "Nayarit",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-NAYARIT",
+        "children": [
+          {
+            "nombre": "Tepic",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-NAYARIT-TEPIC"
+          },
+          {
+            "nombre": "Bahía de Banderas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-NAYARIT-BAHIA_DE_BANDERAS"
+          },
+          {
+            "nombre": "Santiago Ixcuintla",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-NAYARIT-SANTIAGO_IXCUINTLA"
+          }
+        ]
+      },
+      {
+        "nombre": "Nuevo León",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-NUEVO_LEON",
+        "children": [
+          {
+            "nombre": "Monterrey",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-NUEVO_LEON-MONTERREY",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-NUEVO_LEON-MONTERREY-01"
+              },
+              {
+                "nombre": "Contry",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-NUEVO_LEON-MONTERREY-02"
+              },
+              {
+                "nombre": "Mitras Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-NUEVO_LEON-MONTERREY-03"
+              }
+            ]
+          },
+          {
+            "nombre": "San Pedro Garza García",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-NUEVO_LEON-SAN_PEDRO_GARZA_GARCIA"
+          },
+          {
+            "nombre": "Guadalupe",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-NUEVO_LEON-GUADALUPE"
+          },
+          {
+            "nombre": "Apodaca",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-NUEVO_LEON-APODACA"
+          },
+          {
+            "nombre": "San Nicolás de los Garza",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-NUEVO_LEON-SAN_NICOLAS_DE_LOS_GARZA"
+          }
+        ]
+      },
+      {
+        "nombre": "Oaxaca",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-OAXACA",
+        "children": [
+          {
+            "nombre": "Oaxaca de Juárez",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-OAXACA-OAXACA_DE_JUAREZ"
+          },
+          {
+            "nombre": "Salina Cruz",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-OAXACA-SALINA_CRUZ"
+          },
+          {
+            "nombre": "Tuxtepec",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-OAXACA-TUXTEPEC"
+          }
+        ]
+      },
+      {
+        "nombre": "Puebla",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-PUEBLA",
+        "children": [
+          {
+            "nombre": "Puebla",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-PUEBLA-PUEBLA",
+            "children": [
+              {
+                "nombre": "Centro Histórico",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-PUEBLA-PUEBLA-01"
+              },
+              {
+                "nombre": "La Paz",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-PUEBLA-PUEBLA-02"
+              },
+              {
+                "nombre": "Angelópolis",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-PUEBLA-PUEBLA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "San Andrés Cholula",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-PUEBLA-SAN_ANDRES_CHOLULA"
+          },
+          {
+            "nombre": "Tehuacán",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-PUEBLA-TEHUACAN"
+          }
+        ]
+      },
+      {
+        "nombre": "Querétaro",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-QUERETARO",
+        "children": [
+          {
+            "nombre": "Querétaro",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-QUERETARO-QUERETARO",
+            "children": [
+              {
+                "nombre": "Centro Sur",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-QUERETARO-QUERETARO-01"
+              },
+              {
+                "nombre": "Juriquilla",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-QUERETARO-QUERETARO-02"
+              },
+              {
+                "nombre": "Santa Rosa Jáuregui",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-QUERETARO-QUERETARO-03"
+              }
+            ]
+          },
+          {
+            "nombre": "San Juan del Río",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-QUERETARO-SAN_JUAN_DEL_RIO"
+          },
+          {
+            "nombre": "El Marqués",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-QUERETARO-EL_MARQUES"
+          }
+        ]
+      },
+      {
+        "nombre": "Quintana Roo",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-QUINTANA_ROO",
+        "children": [
+          {
+            "nombre": "Benito Juárez",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-QUINTANA_ROO-BENITO_JUAREZ"
+          },
+          {
+            "nombre": "Solidaridad",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-QUINTANA_ROO-SOLIDARIDAD"
+          },
+          {
+            "nombre": "Othón P. Blanco",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-QUINTANA_ROO-OTHON_P_BLANCO"
+          }
+        ]
+      },
+      {
+        "nombre": "San Luis Potosí",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-SAN_LUIS_POTOSI",
+        "children": [
+          {
+            "nombre": "San Luis Potosí",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-SAN_LUIS_POTOSI-SAN_LUIS_POTOSI"
+          },
+          {
+            "nombre": "Soledad de Graciano Sánchez",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-SAN_LUIS_POTOSI-SOLEDAD_DE_GRACIANO_SANCHEZ"
+          },
+          {
+            "nombre": "Ciudad Valles",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-SAN_LUIS_POTOSI-CIUDAD_VALLES"
+          }
+        ]
+      },
+      {
+        "nombre": "Sinaloa",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-SINALOA",
+        "children": [
+          {
+            "nombre": "Culiacán",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-SINALOA-CULIACAN",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-SINALOA-CULIACAN-01"
+              },
+              {
+                "nombre": "Tres Ríos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-SINALOA-CULIACAN-02"
+              },
+              {
+                "nombre": "Bachigualato",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-SINALOA-CULIACAN-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Mazatlán",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-SINALOA-MAZATLAN"
+          },
+          {
+            "nombre": "Ahome",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-SINALOA-AHOME"
+          }
+        ]
+      },
+      {
+        "nombre": "Sonora",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-SONORA",
+        "children": [
+          {
+            "nombre": "Hermosillo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-SONORA-HERMOSILLO",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-SONORA-HERMOSILLO-01"
+              },
+              {
+                "nombre": "Villa de Seris",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-SONORA-HERMOSILLO-02"
+              },
+              {
+                "nombre": "Pitic",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-SONORA-HERMOSILLO-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Cajeme",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-SONORA-CAJEME"
+          },
+          {
+            "nombre": "Nogales",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-SONORA-NOGALES"
+          }
+        ]
+      },
+      {
+        "nombre": "Tabasco",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-TABASCO",
+        "children": [
+          {
+            "nombre": "Centro",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TABASCO-CENTRO"
+          },
+          {
+            "nombre": "Cárdenas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TABASCO-CARDENAS"
+          },
+          {
+            "nombre": "Comalcalco",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TABASCO-COMALCALCO"
+          }
+        ]
+      },
+      {
+        "nombre": "Tamaulipas",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-TAMAULIPAS",
+        "children": [
+          {
+            "nombre": "Reynosa",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TAMAULIPAS-REYNOSA"
+          },
+          {
+            "nombre": "Matamoros",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TAMAULIPAS-MATAMOROS"
+          },
+          {
+            "nombre": "Victoria",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TAMAULIPAS-VICTORIA"
+          },
+          {
+            "nombre": "Tampico",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TAMAULIPAS-TAMPICO"
+          }
+        ]
+      },
+      {
+        "nombre": "Tlaxcala",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-TLAXCALA",
+        "children": [
+          {
+            "nombre": "Tlaxcala",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TLAXCALA-TLAXCALA"
+          },
+          {
+            "nombre": "Apizaco",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TLAXCALA-APIZACO"
+          },
+          {
+            "nombre": "Huamantla",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-TLAXCALA-HUAMANTLA"
+          }
+        ]
+      },
+      {
+        "nombre": "Veracruz",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-VERACRUZ",
+        "children": [
+          {
+            "nombre": "Xalapa",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-VERACRUZ-XALAPA"
+          },
+          {
+            "nombre": "Veracruz",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-VERACRUZ-VERACRUZ"
+          },
+          {
+            "nombre": "Coatzacoalcos",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-VERACRUZ-COATZACOALCOS"
+          },
+          {
+            "nombre": "Poza Rica de Hidalgo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-VERACRUZ-POZA_RICA_DE_HIDALGO"
+          }
+        ]
+      },
+      {
+        "nombre": "Yucatán",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-YUCATAN",
+        "children": [
+          {
+            "nombre": "Mérida",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-YUCATAN-MERIDA",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-YUCATAN-MERIDA-01"
+              },
+              {
+                "nombre": "Itzimná",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-YUCATAN-MERIDA-02"
+              },
+              {
+                "nombre": "Francisco de Montejo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "MX-YUCATAN-MERIDA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Valladolid",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-YUCATAN-VALLADOLID"
+          },
+          {
+            "nombre": "Progreso",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-YUCATAN-PROGRESO"
+          }
+        ]
+      },
+      {
+        "nombre": "Zacatecas",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Entidad Federativa",
+        "nivel": 2,
+        "codigo_oficial": "MX-ZACATECAS",
+        "children": [
+          {
+            "nombre": "Zacatecas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-ZACATECAS-ZACATECAS"
+          },
+          {
+            "nombre": "Guadalupe",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-ZACATECAS-GUADALUPE"
+          },
+          {
+            "nombre": "Fresnillo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "MX-ZACATECAS-FRESNILLO"
+          }
+        ]
+      }
+    ]
+  }
+]

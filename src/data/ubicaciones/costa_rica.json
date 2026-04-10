@@ -1,0 +1,4252 @@
+  [
+  {
+    "nombre": "Costa Rica",
+    "tipo_sistema": "PAIS",
+    "tipo_real": "País",
+    "nivel": 1,
+    "pais_codigo": "CR",
+    "codigo_oficial": "CR",
+    "children": [
+      {
+        "nombre": "San José",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "1",
+        "children": [
+          {
+            "nombre": "San José",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "101",
+            "children": [
+              {
+                "nombre": "Carmen",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10101"
+              },
+              {
+                "nombre": "Merced",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10102"
+              },
+              {
+                "nombre": "Hospital",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10103"
+              },
+              {
+                "nombre": "Catedral",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10104"
+              },
+              {
+                "nombre": "Zapote",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10105"
+              },
+              {
+                "nombre": "San Francisco de Dos Ríos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10106"
+              },
+              {
+                "nombre": "Uruca",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10107"
+              },
+              {
+                "nombre": "Mata Redonda",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10108"
+              },
+              {
+                "nombre": "Pavas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10109"
+              },
+              {
+                "nombre": "Hatillo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10110"
+              },
+              {
+                "nombre": "San Sebastián",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10111"
+              }
+            ]
+          },
+          {
+            "nombre": "Escazú",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "102",
+            "children": [
+              {
+                "nombre": "Escazú",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10201"
+              },
+              {
+                "nombre": "San Antonio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10202"
+              },
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10203"
+              }
+            ]
+          },
+          {
+            "nombre": "Desamparados",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "103",
+            "children": [
+              {
+                "nombre": "Desamparados",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10301"
+              },
+              {
+                "nombre": "San Miguel",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10302"
+              },
+              {
+                "nombre": "San Juan de Dios",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10303"
+              },
+              {
+                "nombre": "San Rafael Arriba",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10304"
+              },
+              {
+                "nombre": "San Antonio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10305"
+              },
+              {
+                "nombre": "Frailes",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10306"
+              },
+              {
+                "nombre": "Patarra",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10307"
+              },
+              {
+                "nombre": "San Cristobal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10308"
+              },
+              {
+                "nombre": "Rosario",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10309"
+              },
+              {
+                "nombre": "Damas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10310"
+              },
+              {
+                "nombre": "San Rafael Abajo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10311"
+              },
+              {
+                "nombre": "Gravilias",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10312"
+              },
+              {
+                "nombre": "Los Guido",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10313"
+              }
+            ]
+          },
+          {
+            "nombre": "Puriscal",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "104",
+            "children": [
+              {
+                "nombre": "Santiago",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10401"
+              },
+              {
+                "nombre": "Mercedes Sur",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10402"
+              },
+              {
+                "nombre": "Barbacoas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10403"
+              },
+              {
+                "nombre": "Grifo Alto",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10404"
+              },
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10405"
+              },
+              {
+                "nombre": "Candelarita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10406"
+              },
+              {
+                "nombre": "Desamparaditos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10407"
+              },
+              {
+                "nombre": "San Antonio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10408"
+              },
+              {
+                "nombre": "Chires",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10409"
+              }
+            ]
+          },
+          {
+            "nombre": "Tarrazú",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "105",
+            "children": [
+              {
+                "nombre": "San Marcos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10501"
+              },
+              {
+                "nombre": "San Lorenzo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10502"
+              },
+              {
+                "nombre": "San Carlos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10503"
+              }
+            ]
+          },
+          {
+            "nombre": "Aserrí",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "106",
+            "children": [
+              {
+                "nombre": "Aserrí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10601"
+              },
+              {
+                "nombre": "Tarbaca",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10602"
+              },
+              {
+                "nombre": "Vuelta de Jorco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10603"
+              },
+              {
+                "nombre": "San Gabriel",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10604"
+              },
+              {
+                "nombre": "Legua",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10605"
+              },
+              {
+                "nombre": "Monterrey",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10606"
+              },
+              {
+                "nombre": "Salitrillos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10607"
+              }
+            ]
+          },
+          {
+            "nombre": "Mora",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "107",
+            "children": [
+              {
+                "nombre": "Colón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10701"
+              },
+              {
+                "nombre": "Guayabo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10702"
+              },
+              {
+                "nombre": "Tabarcia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10703"
+              },
+              {
+                "nombre": "Piedras Negras",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10704"
+              },
+              {
+                "nombre": "Picagres",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10705"
+              },
+              {
+                "nombre": "Jaris",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10706"
+              },
+              {
+                "nombre": "Quitirrisí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10707"
+              }
+            ]
+          },
+          {
+            "nombre": "Goicoechea",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "108",
+            "children": [
+              {
+                "nombre": "Guadalupe",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10801"
+              },
+              {
+                "nombre": "San Francisco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10802"
+              },
+              {
+                "nombre": "Calle Blancos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10803"
+              },
+              {
+                "nombre": "Mata de Plátano",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10804"
+              },
+              {
+                "nombre": "Ipis",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10805"
+              },
+              {
+                "nombre": "Rancho Redondo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10806"
+              },
+              {
+                "nombre": "Purral",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10807"
+              }
+            ]
+          },
+          {
+            "nombre": "Santa Ana",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "109",
+            "children": [
+              {
+                "nombre": "Santa Ana",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10901"
+              },
+              {
+                "nombre": "Salitral",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10902"
+              },
+              {
+                "nombre": "Pozos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10903"
+              },
+              {
+                "nombre": "Uruca",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10904"
+              },
+              {
+                "nombre": "Piedades",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10905"
+              },
+              {
+                "nombre": "Brasil",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "10906"
+              }
+            ]
+          },
+          {
+            "nombre": "Alajuelita",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "110",
+            "children": [
+              {
+                "nombre": "Alajuelita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11001"
+              },
+              {
+                "nombre": "San Josecito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11002"
+              },
+              {
+                "nombre": "San Antonio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11003"
+              },
+              {
+                "nombre": "Concepción",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11004"
+              },
+              {
+                "nombre": "San Felipe",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11005"
+              }
+            ]
+          },
+          {
+            "nombre": "Vazquez de Coronado",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "111",
+            "children": [
+              {
+                "nombre": "San Isidro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11101"
+              },
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11102"
+              },
+              {
+                "nombre": "Dulce Nombre de Jesús",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11103"
+              },
+              {
+                "nombre": "Patalillo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11104"
+              },
+              {
+                "nombre": "Cascajal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11105"
+              }
+            ]
+          },
+          {
+            "nombre": "Acosta",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "112",
+            "children": [
+              {
+                "nombre": "San Ignacio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11201"
+              },
+              {
+                "nombre": "Guaitil",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11202"
+              },
+              {
+                "nombre": "Palmichal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11203"
+              },
+              {
+                "nombre": "Cangrejal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11204"
+              },
+              {
+                "nombre": "Sabanillas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11205"
+              }
+            ]
+          },
+          {
+            "nombre": "Tibás",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "113",
+            "children": [
+              {
+                "nombre": "San Juan",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11301"
+              },
+              {
+                "nombre": "Cinco Esquinas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11302"
+              },
+              {
+                "nombre": "Anselmo Llorente",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11303"
+              },
+              {
+                "nombre": "León XIII",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11304"
+              },
+              {
+                "nombre": "Colima",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11305"
+              }
+            ]
+          },
+          {
+            "nombre": "Moravia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "114",
+            "children": [
+              {
+                "nombre": "San Vicente",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11401"
+              },
+              {
+                "nombre": "San Jerónimo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11402"
+              },
+              {
+                "nombre": "La Trinidad",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11403"
+              }
+            ]
+          },
+          {
+            "nombre": "Montes de Oca",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "115",
+            "children": [
+              {
+                "nombre": "San Pedro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11501"
+              },
+              {
+                "nombre": "Sabanilla",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11502"
+              },
+              {
+                "nombre": "Mercedes",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11503"
+              },
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11504"
+              }
+            ]
+          },
+          {
+            "nombre": "Turrubares",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "116",
+            "children": [
+              {
+                "nombre": "San Pablo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11601"
+              },
+              {
+                "nombre": "San Pedro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11602"
+              },
+              {
+                "nombre": "San Juan de Mata",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11603"
+              },
+              {
+                "nombre": "San Luis",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11604"
+              },
+              {
+                "nombre": "Carara",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11605"
+              }
+            ]
+          },
+          {
+            "nombre": "Dota",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "117",
+            "children": [
+              {
+                "nombre": "Santa María",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11701"
+              },
+              {
+                "nombre": "Jardín",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11702"
+              },
+              {
+                "nombre": "Copey",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11703"
+              }
+            ]
+          },
+          {
+            "nombre": "Curridabat",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "118",
+            "children": [
+              {
+                "nombre": "Curridabat",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11801"
+              },
+              {
+                "nombre": "Granadilla",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11802"
+              },
+              {
+                "nombre": "Sánchez",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11803"
+              },
+              {
+                "nombre": "Tirrases",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11804"
+              }
+            ]
+          },
+          {
+            "nombre": "Pérez Zeledón",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "119",
+            "children": [
+              {
+                "nombre": "San Isidro de El General",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11901"
+              },
+              {
+                "nombre": "El General",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11902"
+              },
+              {
+                "nombre": "Daniel Flores",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11903"
+              },
+              {
+                "nombre": "Rivas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11904"
+              },
+              {
+                "nombre": "San Pedro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11905"
+              },
+              {
+                "nombre": "Platanares",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11906"
+              },
+              {
+                "nombre": "Pejibaye",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11907"
+              },
+              {
+                "nombre": "Cajón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11908"
+              },
+              {
+                "nombre": "Barú",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11909"
+              },
+              {
+                "nombre": "Río Nuevo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11910"
+              },
+              {
+                "nombre": "Paramo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11911"
+              },
+              {
+                "nombre": "La  Amistad",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "11912"
+              }
+            ]
+          },
+          {
+            "nombre": "León Cortés Castro",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "120",
+            "children": [
+              {
+                "nombre": "San Pablo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "12001"
+              },
+              {
+                "nombre": "San Andrés",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "12002"
+              },
+              {
+                "nombre": "Llano Bonito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "12003"
+              },
+              {
+                "nombre": "San Isidro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "12004"
+              },
+              {
+                "nombre": "Santa Cruz",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "12005"
+              },
+              {
+                "nombre": "San Antonio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "12006"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Alajuela",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "2",
+        "children": [
+          {
+            "nombre": "Alajuela",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "201",
+            "children": [
+              {
+                "nombre": "Alajuela",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20101"
+              },
+              {
+                "nombre": "San José",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20102"
+              },
+              {
+                "nombre": "Carrizal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20103"
+              },
+              {
+                "nombre": "San Antonio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20104"
+              },
+              {
+                "nombre": "Guácima",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20105"
+              },
+              {
+                "nombre": "San Isidro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20106"
+              },
+              {
+                "nombre": "Sabanilla",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20107"
+              },
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20108"
+              },
+              {
+                "nombre": "Río Segundo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20109"
+              },
+              {
+                "nombre": "Desamparados",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20110"
+              },
+              {
+                "nombre": "Turrucares",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20111"
+              },
+              {
+                "nombre": "Tambor",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20112"
+              },
+              {
+                "nombre": "Garita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20113"
+              },
+              {
+                "nombre": "Sarapiquí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20114"
+              }
+            ]
+          },
+          {
+            "nombre": "San Ramón",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "202",
+            "children": [
+              {
+                "nombre": "San Ramón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20201"
+              },
+              {
+                "nombre": "Santiago",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20202"
+              },
+              {
+                "nombre": "San Juan",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20203"
+              },
+              {
+                "nombre": "Piedades Norte",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20204"
+              },
+              {
+                "nombre": "Piedades Sur",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20205"
+              },
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20206"
+              },
+              {
+                "nombre": "San Isidro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20207"
+              },
+              {
+                "nombre": "Ángeles",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20208"
+              },
+              {
+                "nombre": "Alfaro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20209"
+              },
+              {
+                "nombre": "Volio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20210"
+              },
+              {
+                "nombre": "Concepción",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20211"
+              },
+              {
+                "nombre": "Zapotal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20212"
+              },
+              {
+                "nombre": "Peñas Blancas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20213"
+              },
+              {
+                "nombre": "San Lorenzo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20214"
+              }
+            ]
+          },
+          {
+            "nombre": "Grecia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "203",
+            "children": [
+              {
+                "nombre": "Grecia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20301"
+              },
+              {
+                "nombre": "San Isidro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20302"
+              },
+              {
+                "nombre": "San José",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20303"
+              },
+              {
+                "nombre": "San Roque",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20304"
+              },
+              {
+                "nombre": "Tacares",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20305"
+              },
+              {
+                "nombre": "Puente de Piedra",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20307"
+              },
+              {
+                "nombre": "Bolivar",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20308"
+              }
+            ]
+          },
+          {
+            "nombre": "San Mateo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "204",
+            "children": [
+              {
+                "nombre": "San Mateo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20401"
+              },
+              {
+                "nombre": "Desmonte",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20402"
+              },
+              {
+                "nombre": "Jesús María",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20403"
+              },
+              {
+                "nombre": "Labrador",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20404"
+              }
+            ]
+          },
+          {
+            "nombre": "Atenas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "205",
+            "children": [
+              {
+                "nombre": "Atenas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20501"
+              },
+              {
+                "nombre": "Jesús",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20502"
+              },
+              {
+                "nombre": "Mercedes",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20503"
+              },
+              {
+                "nombre": "San Isidro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20504"
+              },
+              {
+                "nombre": "Concepción",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20505"
+              },
+              {
+                "nombre": "San José",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20506"
+              },
+              {
+                "nombre": "Santa Eulalia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20507"
+              },
+              {
+                "nombre": "Escobal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20508"
+              }
+            ]
+          },
+          {
+            "nombre": "Naranjo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "206",
+            "children": [
+              {
+                "nombre": "Naranjo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20601"
+              },
+              {
+                "nombre": "San Miguel",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20602"
+              },
+              {
+                "nombre": "San José",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20603"
+              },
+              {
+                "nombre": "Cirrí Sur",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20604"
+              },
+              {
+                "nombre": "San Jerónimo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20605"
+              },
+              {
+                "nombre": "San Juan",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20606"
+              },
+              {
+                "nombre": "El Rosario",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20607"
+              },
+              {
+                "nombre": "Palmitos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20608"
+              }
+            ]
+          },
+          {
+            "nombre": "Palmares",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "207",
+            "children": [
+              {
+                "nombre": "Palmares",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20701"
+              },
+              {
+                "nombre": "Zaragoza",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20702"
+              },
+              {
+                "nombre": "Buenos Aires",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20703"
+              },
+              {
+                "nombre": "Santiago",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20704"
+              },
+              {
+                "nombre": "Candelaria",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20705"
+              },
+              {
+                "nombre": "Esquipulas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20706"
+              },
+              {
+                "nombre": "La Granja",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20707"
+              }
+            ]
+          },
+          {
+            "nombre": "Poás",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "208",
+            "children": [
+              {
+                "nombre": "San Pedro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20801"
+              },
+              {
+                "nombre": "San Juan",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20802"
+              },
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20803"
+              },
+              {
+                "nombre": "Carrillos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20804"
+              },
+              {
+                "nombre": "Sabana Redonda",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20805"
+              }
+            ]
+          },
+          {
+            "nombre": "Orotina",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "209",
+            "children": [
+              {
+                "nombre": "Orotina",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20901"
+              },
+              {
+                "nombre": "El Mastate",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20902"
+              },
+              {
+                "nombre": "Hacienda Vieja",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20903"
+              },
+              {
+                "nombre": "Coyolar",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20904"
+              },
+              {
+                "nombre": "La Ceiba",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "20905"
+              }
+            ]
+          },
+          {
+            "nombre": "San Carlos",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "210",
+            "children": [
+              {
+                "nombre": "Quesada",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21001"
+              },
+              {
+                "nombre": "Florencia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21002"
+              },
+              {
+                "nombre": "Buenavista",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21003"
+              },
+              {
+                "nombre": "Aguas Zarcas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21004"
+              },
+              {
+                "nombre": "Venecia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21005"
+              },
+              {
+                "nombre": "Pital",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21006"
+              },
+              {
+                "nombre": "La Fortuna",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21007"
+              },
+              {
+                "nombre": "La Tigra",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21008"
+              },
+              {
+                "nombre": "La Palmera",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21009"
+              },
+              {
+                "nombre": "Venado",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21010"
+              },
+              {
+                "nombre": "Cutris",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21011"
+              },
+              {
+                "nombre": "Monterrey",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21012"
+              },
+              {
+                "nombre": "Pocosol",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21013"
+              }
+            ]
+          },
+          {
+            "nombre": "Zarcero",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "211",
+            "children": [
+              {
+                "nombre": "Zarcero",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21101"
+              },
+              {
+                "nombre": "Laguna",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21102"
+              },
+              {
+                "nombre": "Tapesco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21103"
+              },
+              {
+                "nombre": "Guadalupe",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21104"
+              },
+              {
+                "nombre": "Palmira",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21105"
+              },
+              {
+                "nombre": "Zapote",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21106"
+              },
+              {
+                "nombre": "Brisas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21107"
+              }
+            ]
+          },
+          {
+            "nombre": "Sarchí",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "212",
+            "children": [
+              {
+                "nombre": "Sarchí Norte",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21201"
+              },
+              {
+                "nombre": "Sarchí Sur",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21202"
+              },
+              {
+                "nombre": "Toro Amarillo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21203"
+              },
+              {
+                "nombre": "San Pedro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21204"
+              },
+              {
+                "nombre": "Rodríguez",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21205"
+              }
+            ]
+          },
+          {
+            "nombre": "Upala",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "213",
+            "children": [
+              {
+                "nombre": "Upala",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21301"
+              },
+              {
+                "nombre": "Aguas Claras",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21302"
+              },
+              {
+                "nombre": "San José O Pizote",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21303"
+              },
+              {
+                "nombre": "Bijagua",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21304"
+              },
+              {
+                "nombre": "Delicias",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21305"
+              },
+              {
+                "nombre": "Dos Ríos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21306"
+              },
+              {
+                "nombre": "Yolillal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21307"
+              },
+              {
+                "nombre": "Canalete",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21308"
+              }
+            ]
+          },
+          {
+            "nombre": "Los Chiles",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "214",
+            "children": [
+              {
+                "nombre": "Los Chiles",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21401"
+              },
+              {
+                "nombre": "Caño Negro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21402"
+              },
+              {
+                "nombre": "El Amparo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21403"
+              },
+              {
+                "nombre": "San Jorge",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21404"
+              }
+            ]
+          },
+          {
+            "nombre": "Guatuso",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "215",
+            "children": [
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21501"
+              },
+              {
+                "nombre": "Buenavista",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21502"
+              },
+              {
+                "nombre": "Cote",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21503"
+              },
+              {
+                "nombre": "Katira",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21504"
+              }
+            ]
+          },
+          {
+            "nombre": "Río Cuarto",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "216",
+            "children": [
+              {
+                "nombre": "Río Cuarto",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21601"
+              },
+              {
+                "nombre": "Santa Rita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21602"
+              },
+              {
+                "nombre": "Santa Isabel",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "21603"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Cartago",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "3",
+        "children": [
+          {
+            "nombre": "Cartago",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "301",
+            "children": [
+              {
+                "nombre": "Oriental",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30101"
+              },
+              {
+                "nombre": "Occidental",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30102"
+              },
+              {
+                "nombre": "Carmen",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30103"
+              },
+              {
+                "nombre": "San Nicolás",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30104"
+              },
+              {
+                "nombre": "Aguacaliente o San Francisco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30105"
+              },
+              {
+                "nombre": "Guadalupe o Arenilla",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30106"
+              },
+              {
+                "nombre": "Corralillo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30107"
+              },
+              {
+                "nombre": "Tierra Blanca",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30108"
+              },
+              {
+                "nombre": "Dulce Nombre",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30109"
+              },
+              {
+                "nombre": "Llano Grande",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30110"
+              },
+              {
+                "nombre": "Quebradilla",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30111"
+              }
+            ]
+          },
+          {
+            "nombre": "Paraíso",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "302",
+            "children": [
+              {
+                "nombre": "Paraíso",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30201"
+              },
+              {
+                "nombre": "Santiago",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30202"
+              },
+              {
+                "nombre": "Orosi",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30203"
+              },
+              {
+                "nombre": "Cachí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30204"
+              },
+              {
+                "nombre": "Llanos de Santa Lucía",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30205"
+              },
+              {
+                "nombre": "Birrisito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30206"
+              }
+            ]
+          },
+          {
+            "nombre": "La Unión",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "303",
+            "children": [
+              {
+                "nombre": "Tres Ríos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30301"
+              },
+              {
+                "nombre": "San Diego",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30302"
+              },
+              {
+                "nombre": "San Juan",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30303"
+              },
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30304"
+              },
+              {
+                "nombre": "Concepción",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30305"
+              },
+              {
+                "nombre": "Dulce Nombre",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30306"
+              },
+              {
+                "nombre": "San Ramón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30307"
+              },
+              {
+                "nombre": "Río Azul",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30308"
+              }
+            ]
+          },
+          {
+            "nombre": "Jiménez",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "304",
+            "children": [
+              {
+                "nombre": "Juan Viñas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30401"
+              },
+              {
+                "nombre": "Tucurrique",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30402"
+              },
+              {
+                "nombre": "Pejibaye",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30403"
+              }
+            ]
+          },
+          {
+            "nombre": "Turrialba",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "305",
+            "children": [
+              {
+                "nombre": "Turrialba",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30501"
+              },
+              {
+                "nombre": "La Suiza",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30502"
+              },
+              {
+                "nombre": "Peralta",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30503"
+              },
+              {
+                "nombre": "Santa Cruz",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30504"
+              },
+              {
+                "nombre": "Santa Teresita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30505"
+              },
+              {
+                "nombre": "Pavones",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30506"
+              },
+              {
+                "nombre": "Tuis",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30507"
+              },
+              {
+                "nombre": "Tayutic",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30508"
+              },
+              {
+                "nombre": "Santa Rosa",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30509"
+              },
+              {
+                "nombre": "Tres Equis",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30510"
+              },
+              {
+                "nombre": "La Isabel",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30511"
+              },
+              {
+                "nombre": "Chirripó",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30512"
+              }
+            ]
+          },
+          {
+            "nombre": "Alvarado",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "306",
+            "children": [
+              {
+                "nombre": "Pacayas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30601"
+              },
+              {
+                "nombre": "Cervantes",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30602"
+              },
+              {
+                "nombre": "Capellades",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30603"
+              }
+            ]
+          },
+          {
+            "nombre": "Oreamuno",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "307",
+            "children": [
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30701"
+              },
+              {
+                "nombre": "Cot",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30702"
+              },
+              {
+                "nombre": "Potrero Cerrado",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30703"
+              },
+              {
+                "nombre": "Cipreses",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30704"
+              },
+              {
+                "nombre": "Santa Rosa",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30705"
+              }
+            ]
+          },
+          {
+            "nombre": "El Guarco",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "308",
+            "children": [
+              {
+                "nombre": "El Tejar",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30801"
+              },
+              {
+                "nombre": "San Isidro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30802"
+              },
+              {
+                "nombre": "Tobosi",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30803"
+              },
+              {
+                "nombre": "Patio de Agua",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "30804"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Heredia",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "4",
+        "children": [
+          {
+            "nombre": "Heredia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "401",
+            "children": [
+              {
+                "nombre": "Heredia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40101"
+              },
+              {
+                "nombre": "Mercedes",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40102"
+              },
+              {
+                "nombre": "San Francisco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40103"
+              },
+              {
+                "nombre": "Ulloa",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40104"
+              },
+              {
+                "nombre": "Varablanca",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40105"
+              }
+            ]
+          },
+          {
+            "nombre": "Barva",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "402",
+            "children": [
+              {
+                "nombre": "Barva",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40201"
+              },
+              {
+                "nombre": "San Pedro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40202"
+              },
+              {
+                "nombre": "San Pablo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40203"
+              },
+              {
+                "nombre": "San Roque",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40204"
+              },
+              {
+                "nombre": "Santa Lucía",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40205"
+              },
+              {
+                "nombre": "San José de la Montaña",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40206"
+              }
+            ]
+          },
+          {
+            "nombre": "Santo Domingo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "403",
+            "children": [
+              {
+                "nombre": "Santo Domingo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40301"
+              },
+              {
+                "nombre": "San Vicente",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40302"
+              },
+              {
+                "nombre": "San Miguel",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40303"
+              },
+              {
+                "nombre": "Paracito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40304"
+              },
+              {
+                "nombre": "Santo Tomás",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40305"
+              },
+              {
+                "nombre": "Santa Rosa",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40306"
+              },
+              {
+                "nombre": "Tures",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40307"
+              },
+              {
+                "nombre": "Pará",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40308"
+              }
+            ]
+          },
+          {
+            "nombre": "Santa Bárbara",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "404",
+            "children": [
+              {
+                "nombre": "Santa Bárbara",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40401"
+              },
+              {
+                "nombre": "San Pedro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40402"
+              },
+              {
+                "nombre": "San Juan",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40403"
+              },
+              {
+                "nombre": "Jesús",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40404"
+              },
+              {
+                "nombre": "Santo Domingo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40405"
+              },
+              {
+                "nombre": "Purabá",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40406"
+              }
+            ]
+          },
+          {
+            "nombre": "San Rafael",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "405",
+            "children": [
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40501"
+              },
+              {
+                "nombre": "San Josecito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40502"
+              },
+              {
+                "nombre": "Santiago",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40503"
+              },
+              {
+                "nombre": "Ángeles",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40504"
+              },
+              {
+                "nombre": "Concepción",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40505"
+              }
+            ]
+          },
+          {
+            "nombre": "San Isidro",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "406",
+            "children": [
+              {
+                "nombre": "San Isidro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40601"
+              },
+              {
+                "nombre": "San José",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40602"
+              },
+              {
+                "nombre": "Concepción",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40603"
+              },
+              {
+                "nombre": "San Francisco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40604"
+              }
+            ]
+          },
+          {
+            "nombre": "Belén",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "407",
+            "children": [
+              {
+                "nombre": "San Antonio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40701"
+              },
+              {
+                "nombre": "La Ribera",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40702"
+              },
+              {
+                "nombre": "La Asunción",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40703"
+              }
+            ]
+          },
+          {
+            "nombre": "Flores",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "408",
+            "children": [
+              {
+                "nombre": "San Joaquín",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40801"
+              },
+              {
+                "nombre": "Barrantes",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40802"
+              },
+              {
+                "nombre": "Llorente",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40803"
+              }
+            ]
+          },
+          {
+            "nombre": "San Pablo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "409",
+            "children": [
+              {
+                "nombre": "San Pablo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40901"
+              },
+              {
+                "nombre": "Rincón de Sabanilla",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "40902"
+              }
+            ]
+          },
+          {
+            "nombre": "Sarapiquí",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "410",
+            "children": [
+              {
+                "nombre": "Puerto Viejo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "41001"
+              },
+              {
+                "nombre": "La Virgen",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "41002"
+              },
+              {
+                "nombre": "Las Horquetas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "41003"
+              },
+              {
+                "nombre": "Llanuras del Gaspar",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "41004"
+              },
+              {
+                "nombre": "Cureña",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "41005"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Guanacaste",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "5",
+        "children": [
+          {
+            "nombre": "Liberia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "501",
+            "children": [
+              {
+                "nombre": "Liberia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50101"
+              },
+              {
+                "nombre": "Cañas Dulces",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50102"
+              },
+              {
+                "nombre": "Mayorga",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50103"
+              },
+              {
+                "nombre": "Nacascolo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50104"
+              },
+              {
+                "nombre": "Curubandé",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50105"
+              }
+            ]
+          },
+          {
+            "nombre": "Nicoya",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "502",
+            "children": [
+              {
+                "nombre": "Nicoya",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50201"
+              },
+              {
+                "nombre": "Mansión",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50202"
+              },
+              {
+                "nombre": "San Antonio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50203"
+              },
+              {
+                "nombre": "Quebrada Honda",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50204"
+              },
+              {
+                "nombre": "Sámara",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50205"
+              },
+              {
+                "nombre": "Nosara",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50206"
+              },
+              {
+                "nombre": "Belén de Nosarita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50207"
+              }
+            ]
+          },
+          {
+            "nombre": "Santa Cruz",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "503",
+            "children": [
+              {
+                "nombre": "Santa Cruz",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50301"
+              },
+              {
+                "nombre": "Bolsón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50302"
+              },
+              {
+                "nombre": "Veintisiete de Abril",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50303"
+              },
+              {
+                "nombre": "Tempate",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50304"
+              },
+              {
+                "nombre": "Cartagena",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50305"
+              },
+              {
+                "nombre": "Cuajiniquil",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50306"
+              },
+              {
+                "nombre": "Diriá",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50307"
+              },
+              {
+                "nombre": "Cabo Velas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50308"
+              },
+              {
+                "nombre": "Tamarindo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50309"
+              }
+            ]
+          },
+          {
+            "nombre": "Bagaces",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "504",
+            "children": [
+              {
+                "nombre": "Bagaces",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50401"
+              },
+              {
+                "nombre": "La Fortuna",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50402"
+              },
+              {
+                "nombre": "Mogote",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50403"
+              },
+              {
+                "nombre": "Río Naranjo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50404"
+              }
+            ]
+          },
+          {
+            "nombre": "Carrillo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "505",
+            "children": [
+              {
+                "nombre": "Filadelfia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50501"
+              },
+              {
+                "nombre": "Palmira",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50502"
+              },
+              {
+                "nombre": "Sardinal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50503"
+              },
+              {
+                "nombre": "Belén",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50504"
+              }
+            ]
+          },
+          {
+            "nombre": "Cañas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "506",
+            "children": [
+              {
+                "nombre": "Cañas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50601"
+              },
+              {
+                "nombre": "Palmira",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50602"
+              },
+              {
+                "nombre": "San Miguel",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50603"
+              },
+              {
+                "nombre": "Bebedero",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50604"
+              },
+              {
+                "nombre": "Porozal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50605"
+              }
+            ]
+          },
+          {
+            "nombre": "Abangares",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "507",
+            "children": [
+              {
+                "nombre": "Las Juntas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50701"
+              },
+              {
+                "nombre": "Sierra",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50702"
+              },
+              {
+                "nombre": "San Juan",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50703"
+              },
+              {
+                "nombre": "Colorado",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50704"
+              }
+            ]
+          },
+          {
+            "nombre": "Tilarán",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "508",
+            "children": [
+              {
+                "nombre": "Tilarán",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50801"
+              },
+              {
+                "nombre": "Quebrada Grande",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50802"
+              },
+              {
+                "nombre": "Tronadora",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50803"
+              },
+              {
+                "nombre": "Santa Rosa",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50804"
+              },
+              {
+                "nombre": "Líbano",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50805"
+              },
+              {
+                "nombre": "Tierras Morenas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50806"
+              },
+              {
+                "nombre": "Arenal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50807"
+              },
+              {
+                "nombre": "Cabeceras",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50808"
+              }
+            ]
+          },
+          {
+            "nombre": "Nandayure",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "509",
+            "children": [
+              {
+                "nombre": "Carmona",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50901"
+              },
+              {
+                "nombre": "Santa Rita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50902"
+              },
+              {
+                "nombre": "Zapotal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50903"
+              },
+              {
+                "nombre": "San Pablo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50904"
+              },
+              {
+                "nombre": "Porvenir",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50905"
+              },
+              {
+                "nombre": "Bejuco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "50906"
+              }
+            ]
+          },
+          {
+            "nombre": "La Cruz",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "510",
+            "children": [
+              {
+                "nombre": "La Cruz",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "51001"
+              },
+              {
+                "nombre": "Santa Cecilia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "51002"
+              },
+              {
+                "nombre": "La Garita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "51003"
+              },
+              {
+                "nombre": "Santa Elena",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "51004"
+              }
+            ]
+          },
+          {
+            "nombre": "Hojancha",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "511",
+            "children": [
+              {
+                "nombre": "Hojancha",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "51101"
+              },
+              {
+                "nombre": "Monte Romo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "51102"
+              },
+              {
+                "nombre": "Puerto Carrillo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "51103"
+              },
+              {
+                "nombre": "Huacas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "51104"
+              },
+              {
+                "nombre": "Matambú",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "51105"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Puntarenas",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "6",
+        "children": [
+          {
+            "nombre": "Puntarenas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "601",
+            "children": [
+              {
+                "nombre": "Puntarenas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60101"
+              },
+              {
+                "nombre": "Pitahaya",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60102"
+              },
+              {
+                "nombre": "Chomes",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60103"
+              },
+              {
+                "nombre": "Lepanto",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60104"
+              },
+              {
+                "nombre": "Paquera",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60105"
+              },
+              {
+                "nombre": "Manzanillo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60106"
+              },
+              {
+                "nombre": "Guacimal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60107"
+              },
+              {
+                "nombre": "Barranca",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60108"
+              },
+              {
+                "nombre": "Isla del Coco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60110"
+              },
+              {
+                "nombre": "Cóbano",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60111"
+              },
+              {
+                "nombre": "Chacarita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60112"
+              },
+              {
+                "nombre": "Chira",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60113"
+              },
+              {
+                "nombre": "Acapulco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60114"
+              },
+              {
+                "nombre": "El Roble",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60115"
+              },
+              {
+                "nombre": "Arancibia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60116"
+              }
+            ]
+          },
+          {
+            "nombre": "Esparza",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "602",
+            "children": [
+              {
+                "nombre": "Espíritu Santo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60201"
+              },
+              {
+                "nombre": "San Juan Grande",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60202"
+              },
+              {
+                "nombre": "Macacona",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60203"
+              },
+              {
+                "nombre": "San Rafael",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60204"
+              },
+              {
+                "nombre": "San Jerónimo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60205"
+              },
+              {
+                "nombre": "Caldera",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60206"
+              }
+            ]
+          },
+          {
+            "nombre": "Buenos Aires",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "603",
+            "children": [
+              {
+                "nombre": "Buenos Aires",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60301"
+              },
+              {
+                "nombre": "Volcán",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60302"
+              },
+              {
+                "nombre": "Potrero Grande",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60303"
+              },
+              {
+                "nombre": "Boruca",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60304"
+              },
+              {
+                "nombre": "Pilas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60305"
+              },
+              {
+                "nombre": "Colinas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60306"
+              },
+              {
+                "nombre": "Chánguena",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60307"
+              },
+              {
+                "nombre": "Biolley",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60308"
+              },
+              {
+                "nombre": "Brunka",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60309"
+              }
+            ]
+          },
+          {
+            "nombre": "Montes de Oro",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "604",
+            "children": [
+              {
+                "nombre": "Miramar",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60401"
+              },
+              {
+                "nombre": "La Unión",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60402"
+              },
+              {
+                "nombre": "San Isidro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60403"
+              }
+            ]
+          },
+          {
+            "nombre": "Osa",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "605",
+            "children": [
+              {
+                "nombre": "Puerto Cortés",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60501"
+              },
+              {
+                "nombre": "Palmar",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60502"
+              },
+              {
+                "nombre": "Sierpe",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60503"
+              },
+              {
+                "nombre": "Bahía Ballena",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60504"
+              },
+              {
+                "nombre": "Piedras Blancas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60505"
+              },
+              {
+                "nombre": "Bahía Drake",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60506"
+              }
+            ]
+          },
+          {
+            "nombre": "Quepos",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "606",
+            "children": [
+              {
+                "nombre": "Quepos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60601"
+              },
+              {
+                "nombre": "Savegre",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60602"
+              },
+              {
+                "nombre": "Naranjito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60603"
+              }
+            ]
+          },
+          {
+            "nombre": "Golfito",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "607",
+            "children": [
+              {
+                "nombre": "Golfito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60701"
+              },
+              {
+                "nombre": "Puerto Jiménez",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60702"
+              },
+              {
+                "nombre": "Guaycará",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60703"
+              },
+              {
+                "nombre": "Pavón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60704"
+              }
+            ]
+          },
+          {
+            "nombre": "Coto Brus",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "608",
+            "children": [
+              {
+                "nombre": "San Vito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60801"
+              },
+              {
+                "nombre": "Sabalito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60802"
+              },
+              {
+                "nombre": "Aguabuena",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60803"
+              },
+              {
+                "nombre": "Limoncito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60804"
+              },
+              {
+                "nombre": "Pittier",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60805"
+              },
+              {
+                "nombre": "Gutiérrez Braun",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60806"
+              }
+            ]
+          },
+          {
+            "nombre": "Parrita",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "609",
+            "children": [
+              {
+                "nombre": "Parrita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "60901"
+              }
+            ]
+          },
+          {
+            "nombre": "Corredores",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "610",
+            "children": [
+              {
+                "nombre": "Corredor",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "61001"
+              },
+              {
+                "nombre": "La Cuesta",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "61002"
+              },
+              {
+                "nombre": "Canoas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "61003"
+              },
+              {
+                "nombre": "Laurel",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "61004"
+              }
+            ]
+          },
+          {
+            "nombre": "Garabito",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "611",
+            "children": [
+              {
+                "nombre": "Jacó",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "61101"
+              },
+              {
+                "nombre": "Tárcoles",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "61102"
+              },
+              {
+                "nombre": "Lagunillas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "61103"
+              }
+            ]
+          },
+          {
+            "nombre": "Monteverde",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "612",
+            "children": [
+              {
+                "nombre": "Monteverde",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "61201"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Limón",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "7",
+        "children": [
+          {
+            "nombre": "Limón",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "701",
+            "children": [
+              {
+                "nombre": "Limón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70101"
+              },
+              {
+                "nombre": "Valle La Estrella",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70102"
+              },
+              {
+                "nombre": "Río Blanco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70103"
+              },
+              {
+                "nombre": "Matama",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70104"
+              }
+            ]
+          },
+          {
+            "nombre": "Pococí",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "702",
+            "children": [
+              {
+                "nombre": "Guápiles",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70201"
+              },
+              {
+                "nombre": "Jiménez",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70202"
+              },
+              {
+                "nombre": "Rita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70203"
+              },
+              {
+                "nombre": "Roxana",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70204"
+              },
+              {
+                "nombre": "Cariari",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70205"
+              },
+              {
+                "nombre": "Colorado",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70206"
+              },
+              {
+                "nombre": "La Colonia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70207"
+              }
+            ]
+          },
+          {
+            "nombre": "Siquirres",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "703",
+            "children": [
+              {
+                "nombre": "Siquirres",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70301"
+              },
+              {
+                "nombre": "Pacuarito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70302"
+              },
+              {
+                "nombre": "Florida",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70303"
+              },
+              {
+                "nombre": "Germania",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70304"
+              },
+              {
+                "nombre": "El Cairo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70305"
+              },
+              {
+                "nombre": "Alegría",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70306"
+              },
+              {
+                "nombre": "Reventazón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70307"
+              }
+            ]
+          },
+          {
+            "nombre": "Talamanca",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "704",
+            "children": [
+              {
+                "nombre": "Bratsi",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70401"
+              },
+              {
+                "nombre": "Sixaola",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70402"
+              },
+              {
+                "nombre": "Cahuita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70403"
+              },
+              {
+                "nombre": "Telire",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70404"
+              }
+            ]
+          },
+          {
+            "nombre": "Matina",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "705",
+            "children": [
+              {
+                "nombre": "Matina",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70501"
+              },
+              {
+                "nombre": "Batán",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70502"
+              },
+              {
+                "nombre": "Carrandí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70503"
+              }
+            ]
+          },
+          {
+            "nombre": "Guácimo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Cantón",
+            "nivel": 3,
+            "codigo_oficial": "706",
+            "children": [
+              {
+                "nombre": "Guácimo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70601"
+              },
+              {
+                "nombre": "Mercedes",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70602"
+              },
+              {
+                "nombre": "Pocora",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70603"
+              },
+              {
+                "nombre": "Río Jiménez",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70604"
+              },
+              {
+                "nombre": "Duacarí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "70605"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1194 @@
+[
+  {
+    "nombre": "Colombia",
+    "tipo_sistema": "PAIS",
+    "tipo_real": "País",
+    "nivel": 1,
+    "pais_codigo": "CO",
+    "codigo_oficial": "CO",
+    "children": [
+      {
+        "nombre": "Amazonas",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-AMAZONAS",
+        "children": [
+          {
+            "nombre": "Leticia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-AMAZONAS-LETICIA"
+          },
+          {
+            "nombre": "Puerto Nariño",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-AMAZONAS-PUERTO_NARINO"
+          }
+        ]
+      },
+      {
+        "nombre": "Antioquia",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-ANTIOQUIA",
+        "children": [
+          {
+            "nombre": "Medellín",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ANTIOQUIA-MEDELLIN",
+            "children": [
+              {
+                "nombre": "El Poblado",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-ANTIOQUIA-MEDELLIN-01"
+              },
+              {
+                "nombre": "Laureles-Estadio",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-ANTIOQUIA-MEDELLIN-02"
+              },
+              {
+                "nombre": "Belén",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-ANTIOQUIA-MEDELLIN-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Envigado",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ANTIOQUIA-ENVIGADO"
+          },
+          {
+            "nombre": "Bello",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ANTIOQUIA-BELLO"
+          },
+          {
+            "nombre": "Itagüí",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ANTIOQUIA-ITAGÜI"
+          },
+          {
+            "nombre": "Rionegro",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ANTIOQUIA-RIONEGRO"
+          }
+        ]
+      },
+      {
+        "nombre": "Arauca",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-ARAUCA",
+        "children": [
+          {
+            "nombre": "Arauca",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ARAUCA-ARAUCA"
+          },
+          {
+            "nombre": "Arauquita",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ARAUCA-ARAUQUITA"
+          },
+          {
+            "nombre": "Saravena",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ARAUCA-SARAVENA"
+          }
+        ]
+      },
+      {
+        "nombre": "Atlántico",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-ATLANTICO",
+        "children": [
+          {
+            "nombre": "Barranquilla",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ATLANTICO-BARRANQUILLA",
+            "children": [
+              {
+                "nombre": "Norte-Centro Histórico",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-ATLANTICO-BARRANQUILLA-01"
+              },
+              {
+                "nombre": "Metropolitana",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-ATLANTICO-BARRANQUILLA-02"
+              },
+              {
+                "nombre": "Riomar",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-ATLANTICO-BARRANQUILLA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Soledad",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ATLANTICO-SOLEDAD"
+          },
+          {
+            "nombre": "Malambo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-ATLANTICO-MALAMBO"
+          }
+        ]
+      },
+      {
+        "nombre": "Bogotá D.C.",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Distrito Capital",
+        "nivel": 2,
+        "codigo_oficial": "CO-BOGOTA_DC",
+        "children": [
+          {
+            "nombre": "Bogotá",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Localidad urbana",
+            "nivel": 3,
+            "codigo_oficial": "CO-BOGOTA_DC-BOGOTA",
+            "children": [
+              {
+                "nombre": "Chapinero",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-BOGOTA_DC-BOGOTA-01"
+              },
+              {
+                "nombre": "Usaquén",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-BOGOTA_DC-BOGOTA-02"
+              },
+              {
+                "nombre": "Suba",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-BOGOTA_DC-BOGOTA-03"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Bolívar",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-BOLIVAR",
+        "children": [
+          {
+            "nombre": "Cartagena de Indias",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-BOLIVAR-CARTAGENA_DE_INDIAS",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-BOLIVAR-CARTAGENA_DE_INDIAS-01"
+              },
+              {
+                "nombre": "Bocagrande",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-BOLIVAR-CARTAGENA_DE_INDIAS-02"
+              },
+              {
+                "nombre": "El Pozón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-BOLIVAR-CARTAGENA_DE_INDIAS-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Magangué",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-BOLIVAR-MAGANGUE"
+          },
+          {
+            "nombre": "Turbaco",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-BOLIVAR-TURBACO"
+          }
+        ]
+      },
+      {
+        "nombre": "Boyacá",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-BOYACA",
+        "children": [
+          {
+            "nombre": "Tunja",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-BOYACA-TUNJA"
+          },
+          {
+            "nombre": "Duitama",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-BOYACA-DUITAMA"
+          },
+          {
+            "nombre": "Sogamoso",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-BOYACA-SOGAMOSO"
+          }
+        ]
+      },
+      {
+        "nombre": "Caldas",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-CALDAS",
+        "children": [
+          {
+            "nombre": "Manizales",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CALDAS-MANIZALES"
+          },
+          {
+            "nombre": "Villamaría",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CALDAS-VILLAMARIA"
+          },
+          {
+            "nombre": "La Dorada",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CALDAS-LA_DORADA"
+          }
+        ]
+      },
+      {
+        "nombre": "Caquetá",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-CAQUETA",
+        "children": [
+          {
+            "nombre": "Florencia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CAQUETA-FLORENCIA"
+          },
+          {
+            "nombre": "San Vicente del Caguán",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CAQUETA-SAN_VICENTE_DEL_CAGUAN"
+          }
+        ]
+      },
+      {
+        "nombre": "Casanare",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-CASANARE",
+        "children": [
+          {
+            "nombre": "Yopal",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CASANARE-YOPAL"
+          },
+          {
+            "nombre": "Aguazul",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CASANARE-AGUAZUL"
+          },
+          {
+            "nombre": "Villanueva",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CASANARE-VILLANUEVA"
+          }
+        ]
+      },
+      {
+        "nombre": "Cauca",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-CAUCA",
+        "children": [
+          {
+            "nombre": "Popayán",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CAUCA-POPAYAN"
+          },
+          {
+            "nombre": "Santander de Quilichao",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CAUCA-SANTANDER_DE_QUILICHAO"
+          }
+        ]
+      },
+      {
+        "nombre": "Cesar",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-CESAR",
+        "children": [
+          {
+            "nombre": "Valledupar",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CESAR-VALLEDUPAR"
+          },
+          {
+            "nombre": "Aguachica",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CESAR-AGUACHICA"
+          }
+        ]
+      },
+      {
+        "nombre": "Chocó",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-CHOCO",
+        "children": [
+          {
+            "nombre": "Quibdó",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CHOCO-QUIBDO"
+          },
+          {
+            "nombre": "Istmina",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CHOCO-ISTMINA"
+          }
+        ]
+      },
+      {
+        "nombre": "Córdoba",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-CORDOBA",
+        "children": [
+          {
+            "nombre": "Montería",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CORDOBA-MONTERIA",
+            "children": [
+              {
+                "nombre": "La Castellana",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-CORDOBA-MONTERIA-01"
+              },
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-CORDOBA-MONTERIA-02"
+              },
+              {
+                "nombre": "Mocarí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-CORDOBA-MONTERIA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Cereté",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CORDOBA-CERETE"
+          },
+          {
+            "nombre": "Lorica",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CORDOBA-LORICA"
+          }
+        ]
+      },
+      {
+        "nombre": "Cundinamarca",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-CUNDINAMARCA",
+        "children": [
+          {
+            "nombre": "Soacha",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CUNDINAMARCA-SOACHA"
+          },
+          {
+            "nombre": "Chía",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CUNDINAMARCA-CHIA"
+          },
+          {
+            "nombre": "Zipaquirá",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CUNDINAMARCA-ZIPAQUIRA"
+          },
+          {
+            "nombre": "Facatativá",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-CUNDINAMARCA-FACATATIVA"
+          }
+        ]
+      },
+      {
+        "nombre": "Guainía",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-GUAINIA",
+        "children": [
+          {
+            "nombre": "Inírida",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-GUAINIA-INIRIDA"
+          }
+        ]
+      },
+      {
+        "nombre": "Guaviare",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-GUAVIARE",
+        "children": [
+          {
+            "nombre": "San José del Guaviare",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-GUAVIARE-SAN_JOSE_DEL_GUAVIARE"
+          }
+        ]
+      },
+      {
+        "nombre": "Huila",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-HUILA",
+        "children": [
+          {
+            "nombre": "Neiva",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-HUILA-NEIVA"
+          },
+          {
+            "nombre": "Pitalito",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-HUILA-PITALITO"
+          },
+          {
+            "nombre": "Garzón",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-HUILA-GARZON"
+          }
+        ]
+      },
+      {
+        "nombre": "La Guajira",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-LA_GUAJIRA",
+        "children": [
+          {
+            "nombre": "Riohacha",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-LA_GUAJIRA-RIOHACHA"
+          },
+          {
+            "nombre": "Maicao",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-LA_GUAJIRA-MAICAO"
+          },
+          {
+            "nombre": "Uribia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-LA_GUAJIRA-URIBIA"
+          }
+        ]
+      },
+      {
+        "nombre": "Magdalena",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-MAGDALENA",
+        "children": [
+          {
+            "nombre": "Santa Marta",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-MAGDALENA-SANTA_MARTA",
+            "children": [
+              {
+                "nombre": "Centro Histórico",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-MAGDALENA-SANTA_MARTA-01"
+              },
+              {
+                "nombre": "Rodadero",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-MAGDALENA-SANTA_MARTA-02"
+              },
+              {
+                "nombre": "Taganga",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-MAGDALENA-SANTA_MARTA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Ciénaga",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-MAGDALENA-CIENAGA"
+          },
+          {
+            "nombre": "Fundación",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-MAGDALENA-FUNDACION"
+          }
+        ]
+      },
+      {
+        "nombre": "Meta",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-META",
+        "children": [
+          {
+            "nombre": "Villavicencio",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-META-VILLAVICENCIO",
+            "children": [
+              {
+                "nombre": "Comuna 1",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-META-VILLAVICENCIO-01"
+              },
+              {
+                "nombre": "Comuna 4",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-META-VILLAVICENCIO-02"
+              },
+              {
+                "nombre": "Comuna 8",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-META-VILLAVICENCIO-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Acacías",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-META-ACACIAS"
+          },
+          {
+            "nombre": "Granada",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-META-GRANADA"
+          }
+        ]
+      },
+      {
+        "nombre": "Nariño",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-NARINO",
+        "children": [
+          {
+            "nombre": "Pasto",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-NARINO-PASTO",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-NARINO-PASTO-01"
+              },
+              {
+                "nombre": "La Carolina",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-NARINO-PASTO-02"
+              },
+              {
+                "nombre": "Catambuco",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-NARINO-PASTO-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Ipiales",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-NARINO-IPIALES"
+          },
+          {
+            "nombre": "Tumaco",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-NARINO-TUMACO"
+          }
+        ]
+      },
+      {
+        "nombre": "Norte de Santander",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-NORTE_DE_SANTANDER",
+        "children": [
+          {
+            "nombre": "Cúcuta",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-NORTE_DE_SANTANDER-CUCUTA",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-NORTE_DE_SANTANDER-CUCUTA-01"
+              },
+              {
+                "nombre": "La Libertad",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-NORTE_DE_SANTANDER-CUCUTA-02"
+              },
+              {
+                "nombre": "Atalaya",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-NORTE_DE_SANTANDER-CUCUTA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Ocaña",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-NORTE_DE_SANTANDER-OCANA"
+          },
+          {
+            "nombre": "Villa del Rosario",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-NORTE_DE_SANTANDER-VILLA_DEL_ROSARIO"
+          }
+        ]
+      },
+      {
+        "nombre": "Putumayo",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-PUTUMAYO",
+        "children": [
+          {
+            "nombre": "Mocoa",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-PUTUMAYO-MOCOA"
+          },
+          {
+            "nombre": "Puerto Asís",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-PUTUMAYO-PUERTO_ASIS"
+          }
+        ]
+      },
+      {
+        "nombre": "Quindío",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-QUINDIO",
+        "children": [
+          {
+            "nombre": "Armenia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-QUINDIO-ARMENIA"
+          },
+          {
+            "nombre": "Calarcá",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-QUINDIO-CALARCA"
+          },
+          {
+            "nombre": "Montenegro",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-QUINDIO-MONTENEGRO"
+          }
+        ]
+      },
+      {
+        "nombre": "Risaralda",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-RISARALDA",
+        "children": [
+          {
+            "nombre": "Pereira",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-RISARALDA-PEREIRA",
+            "children": [
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-RISARALDA-PEREIRA-01"
+              },
+              {
+                "nombre": "Cuba",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-RISARALDA-PEREIRA-02"
+              },
+              {
+                "nombre": "Boston",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-RISARALDA-PEREIRA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Dosquebradas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-RISARALDA-DOSQUEBRADAS"
+          },
+          {
+            "nombre": "Santa Rosa de Cabal",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-RISARALDA-SANTA_ROSA_DE_CABAL"
+          }
+        ]
+      },
+      {
+        "nombre": "San Andrés y Providencia",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-SAN_ANDRES_Y_PROVIDENCIA",
+        "children": [
+          {
+            "nombre": "San Andrés",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-SAN_ANDRES_Y_PROVIDENCIA-SAN_ANDRES"
+          },
+          {
+            "nombre": "Providencia",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-SAN_ANDRES_Y_PROVIDENCIA-PROVIDENCIA"
+          }
+        ]
+      },
+      {
+        "nombre": "Santander",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-SANTANDER",
+        "children": [
+          {
+            "nombre": "Bucaramanga",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-SANTANDER-BUCARAMANGA",
+            "children": [
+              {
+                "nombre": "Cabecera del Llano",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-SANTANDER-BUCARAMANGA-01"
+              },
+              {
+                "nombre": "Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-SANTANDER-BUCARAMANGA-02"
+              },
+              {
+                "nombre": "Mutis",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-SANTANDER-BUCARAMANGA-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Floridablanca",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-SANTANDER-FLORIDABLANCA"
+          },
+          {
+            "nombre": "Girón",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-SANTANDER-GIRON"
+          },
+          {
+            "nombre": "Barrancabermeja",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-SANTANDER-BARRANCABERMEJA"
+          }
+        ]
+      },
+      {
+        "nombre": "Sucre",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-SUCRE",
+        "children": [
+          {
+            "nombre": "Sincelejo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-SUCRE-SINCELEJO"
+          },
+          {
+            "nombre": "Corozal",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-SUCRE-COROZAL"
+          }
+        ]
+      },
+      {
+        "nombre": "Tolima",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-TOLIMA",
+        "children": [
+          {
+            "nombre": "Ibagué",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-TOLIMA-IBAGUE"
+          },
+          {
+            "nombre": "Espinal",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-TOLIMA-ESPINAL"
+          },
+          {
+            "nombre": "Melgar",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-TOLIMA-MELGAR"
+          }
+        ]
+      },
+      {
+        "nombre": "Valle del Cauca",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-VALLE_DEL_CAUCA",
+        "children": [
+          {
+            "nombre": "Cali",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-VALLE_DEL_CAUCA-CALI",
+            "children": [
+              {
+                "nombre": "Comuna 2",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-VALLE_DEL_CAUCA-CALI-01"
+              },
+              {
+                "nombre": "Comuna 17",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-VALLE_DEL_CAUCA-CALI-02"
+              },
+              {
+                "nombre": "Comuna 19",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Localidad",
+                "nivel": 4,
+                "codigo_oficial": "CO-VALLE_DEL_CAUCA-CALI-03"
+              }
+            ]
+          },
+          {
+            "nombre": "Palmira",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-VALLE_DEL_CAUCA-PALMIRA"
+          },
+          {
+            "nombre": "Buenaventura",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-VALLE_DEL_CAUCA-BUENAVENTURA"
+          },
+          {
+            "nombre": "Tuluá",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-VALLE_DEL_CAUCA-TULUA"
+          },
+          {
+            "nombre": "Yumbo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-VALLE_DEL_CAUCA-YUMBO"
+          }
+        ]
+      },
+      {
+        "nombre": "Vaupés",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-VAUPES",
+        "children": [
+          {
+            "nombre": "Mitú",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-VAUPES-MITU"
+          }
+        ]
+      },
+      {
+        "nombre": "Vichada",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "CO-VICHADA",
+        "children": [
+          {
+            "nombre": "Puerto Carreño",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "CO-VICHADA-PUERTO_CARRENO"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,965 @@
+[
+  {
+    "nombre": "Panamá",
+    "tipo_sistema": "PAIS",
+    "tipo_real": "País",
+    "nivel": 1,
+    "pais_codigo": "PA",
+    "codigo_oficial": "PA",
+    "children": [
+      {
+        "nombre": "Bocas del Toro",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-BT",
+        "children": [
+          {
+            "nombre": "Bocas del Toro",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-BT-BOCAS",
+            "children": [
+              {
+                "nombre": "Bocas del Toro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-BOCAS-BOCAS"
+              },
+              {
+                "nombre": "Bastimentos",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-BOCAS-BASTIMENTOS"
+              },
+              {
+                "nombre": "Cauchero",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-BOCAS-CAUCHERO"
+              },
+              {
+                "nombre": "Punta Laurel",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-BOCAS-PUNTALAUREL"
+              },
+              {
+                "nombre": "Tierra Oscura",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-BOCAS-TIERRAOSCURA"
+              },
+              {
+                "nombre": "Almirante",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-BOCAS-ALMIRANTE"
+              }
+            ]
+          },
+          {
+            "nombre": "Changuinola",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-BT-CHANG",
+            "children": [
+              {
+                "nombre": "Changuinola",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-CHANG-CHANGUINOLA"
+              },
+              {
+                "nombre": "Almirante",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-CHANG-ALMIRANTE"
+              },
+              {
+                "nombre": "Guabito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-CHANG-GUABITO"
+              },
+              {
+                "nombre": "El Empalme",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-CHANG-EMPALME"
+              },
+              {
+                "nombre": "Las Tablas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-CHANG-LASTABLAS"
+              },
+              {
+                "nombre": "Valle de Riscó",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-CHANG-VALLERISCO"
+              }
+            ]
+          },
+          {
+            "nombre": "Chiriquí Grande",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-BT-CHG",
+            "children": [
+              {
+                "nombre": "Chiriquí Grande",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-CHG-CHG"
+              },
+              {
+                "nombre": "Miramar",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-CHG-MIRAMAR"
+              },
+              {
+                "nombre": "Punta Peña",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-BT-CHG-PUNTAPENA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Coclé",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-CC",
+        "children": [
+          {
+            "nombre": "Penonomé",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-CC-PEN",
+            "children": [
+              {
+                "nombre": "Penonomé",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CC-PEN-PENONOME"
+              },
+              {
+                "nombre": "Coclé",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CC-PEN-COCLE"
+              },
+              {
+                "nombre": "Pajonal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CC-PEN-PAJONAL"
+              }
+            ]
+          },
+          {
+            "nombre": "Aguadulce",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-CC-AGU",
+            "children": [
+              {
+                "nombre": "Aguadulce",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CC-AGU-AGUADULCE"
+              },
+              {
+                "nombre": "El Cristo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CC-AGU-ELCRISTO"
+              },
+              {
+                "nombre": "Pocrí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CC-AGU-POCRI"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Colón",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-CL",
+        "children": [
+          {
+            "nombre": "Colón",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-CL-COL",
+            "children": [
+              {
+                "nombre": "Barrio Norte",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CL-COL-BN"
+              },
+              {
+                "nombre": "Barrio Sur",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CL-COL-BS"
+              },
+              {
+                "nombre": "Cristóbal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CL-COL-CRISTOBAL"
+              },
+              {
+                "nombre": "Cativá",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CL-COL-CATIVA"
+              }
+            ]
+          },
+          {
+            "nombre": "Portobelo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-CL-POR",
+            "children": [
+              {
+                "nombre": "Portobelo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CL-POR-PORTOBELO"
+              },
+              {
+                "nombre": "Isla Grande",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CL-POR-ISLAGRANDE"
+              },
+              {
+                "nombre": "María Chiquita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CL-POR-MARIACHIQUITA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Chiriquí",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-CH",
+        "children": [
+          {
+            "nombre": "David",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-CH-DAV",
+            "children": [
+              {
+                "nombre": "David",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CH-DAV-DAVID"
+              },
+              {
+                "nombre": "San Pablo Nuevo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CH-DAV-SPN"
+              },
+              {
+                "nombre": "Pedregal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CH-DAV-PEDREGAL"
+              }
+            ]
+          },
+          {
+            "nombre": "Bugaba",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-CH-BUG",
+            "children": [
+              {
+                "nombre": "La Concepción",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CH-BUG-LACONCEPCION"
+              },
+              {
+                "nombre": "Volcán",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CH-BUG-VOLCAN"
+              },
+              {
+                "nombre": "Aserrío de Gariché",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CH-BUG-ASERRIO"
+              }
+            ]
+          },
+          {
+            "nombre": "Boquete",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-CH-BOQ",
+            "children": [
+              {
+                "nombre": "Boquete",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CH-BOQ-BOQUETE"
+              },
+              {
+                "nombre": "Caldera",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CH-BOQ-CALDERA"
+              },
+              {
+                "nombre": "Palmira",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-CH-BOQ-PALMIRA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Darién",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-DA",
+        "children": [
+          {
+            "nombre": "Chepigana",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-DA-CHE",
+            "children": [
+              {
+                "nombre": "La Palma",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-DA-CHE-LAPALMA"
+              },
+              {
+                "nombre": "Río Congo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-DA-CHE-RIOCONGO"
+              },
+              {
+                "nombre": "Santa Fe",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-DA-CHE-SANTAFE"
+              }
+            ]
+          },
+          {
+            "nombre": "Pinogana",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-DA-PIN",
+            "children": [
+              {
+                "nombre": "El Real de Santa María",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-DA-PIN-REALSM"
+              },
+              {
+                "nombre": "Yaviza",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-DA-PIN-YAVIZA"
+              },
+              {
+                "nombre": "Metetí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-DA-PIN-METETI"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Herrera",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-HE",
+        "children": [
+          {
+            "nombre": "Chitré",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-HE-CHI",
+            "children": [
+              {
+                "nombre": "Chitré",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-HE-CHI-CHITRE"
+              },
+              {
+                "nombre": "La Arena",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-HE-CHI-LAARENA"
+              },
+              {
+                "nombre": "Monagrillo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-HE-CHI-MONAGRILLO"
+              }
+            ]
+          },
+          {
+            "nombre": "Las Minas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-HE-LM",
+            "children": [
+              {
+                "nombre": "Las Minas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-HE-LM-LASMINAS"
+              },
+              {
+                "nombre": "Chepo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-HE-LM-CHEPO"
+              },
+              {
+                "nombre": "Leones",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-HE-LM-LEONES"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Los Santos",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-LS",
+        "children": [
+          {
+            "nombre": "Las Tablas",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-LS-LT",
+            "children": [
+              {
+                "nombre": "Las Tablas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-LS-LT-LASTABLAS"
+              },
+              {
+                "nombre": "La Palma",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-LS-LT-LAPALMA"
+              },
+              {
+                "nombre": "Santo Domingo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-LS-LT-SANTODOMINGO"
+              }
+            ]
+          },
+          {
+            "nombre": "Guararé",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-LS-GUA",
+            "children": [
+              {
+                "nombre": "Guararé",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-LS-GUA-GUARARE"
+              },
+              {
+                "nombre": "El Espinal",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-LS-GUA-ESPINAL"
+              },
+              {
+                "nombre": "La Pasera",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-LS-GUA-LAPASERA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Panamá Oeste",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-PO",
+        "children": [
+          {
+            "nombre": "La Chorrera",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-PO-LCH",
+            "children": [
+              {
+                "nombre": "Barrio Colón",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PO-LCH-BC"
+              },
+              {
+                "nombre": "Barrio Balboa",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PO-LCH-BB"
+              },
+              {
+                "nombre": "Puerto Caimito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PO-LCH-PC"
+              }
+            ]
+          },
+          {
+            "nombre": "Arraiján",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-PO-ARR",
+            "children": [
+              {
+                "nombre": "Arraiján",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PO-ARR-ARRAIJAN"
+              },
+              {
+                "nombre": "Vista Alegre",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PO-ARR-VA"
+              },
+              {
+                "nombre": "Burunga",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PO-ARR-BURUNGA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Panamá",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-PM",
+        "children": [
+          {
+            "nombre": "Panamá",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-PM-PAN",
+            "children": [
+              {
+                "nombre": "San Felipe",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-PAN-SF"
+              },
+              {
+                "nombre": "Calidonia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-PAN-CAL"
+              },
+              {
+                "nombre": "Bethania",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-PAN-BET"
+              },
+              {
+                "nombre": "Juan Díaz",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-PAN-JD"
+              }
+            ]
+          },
+          {
+            "nombre": "San Miguelito",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-PM-SM",
+            "children": [
+              {
+                "nombre": "Belisario Porras",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-SM-BP"
+              },
+              {
+                "nombre": "José Domingo Espinar",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-SM-JDE"
+              },
+              {
+                "nombre": "Victoriano Lorenzo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-SM-VL"
+              }
+            ]
+          },
+          {
+            "nombre": "Chepo",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-PM-CHE",
+            "children": [
+              {
+                "nombre": "Chepo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-CHE-CHEPO"
+              },
+              {
+                "nombre": "Las Margaritas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-CHE-MARGARITAS"
+              },
+              {
+                "nombre": "Tortí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-PM-CHE-TORTI"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Veraguas",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Provincia",
+        "nivel": 2,
+        "codigo_oficial": "PA-VE",
+        "children": [
+          {
+            "nombre": "Santiago",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-VE-SAN",
+            "children": [
+              {
+                "nombre": "Santiago",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-VE-SAN-SANTIAGO"
+              },
+              {
+                "nombre": "La Peña",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-VE-SAN-LAPENA"
+              },
+              {
+                "nombre": "Canto del Llano",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-VE-SAN-CANTO"
+              }
+            ]
+          },
+          {
+            "nombre": "Atalaya",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-VE-ATA",
+            "children": [
+              {
+                "nombre": "Atalaya",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-VE-ATA-ATALAYA"
+              },
+              {
+                "nombre": "La Montañuela",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-VE-ATA-LM"
+              },
+              {
+                "nombre": "Ponuga",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-VE-ATA-PONUGA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Comarca Guna Yala",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Comarca",
+        "nivel": 2,
+        "codigo_oficial": "PA-GY",
+        "children": [
+          {
+            "nombre": "Narganá",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-GY-NAR",
+            "children": [
+              {
+                "nombre": "Narganá",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-GY-NAR-NARGANA"
+              },
+              {
+                "nombre": "Corazón de Jesús",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-GY-NAR-CDJ"
+              },
+              {
+                "nombre": "Puerto Obaldía",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-GY-NAR-PO"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Comarca Emberá-Wounaan",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Comarca",
+        "nivel": 2,
+        "codigo_oficial": "PA-EW",
+        "children": [
+          {
+            "nombre": "Cémaco",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-EW-CEM",
+            "children": [
+              {
+                "nombre": "Cirilo Guainora",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-EW-CEM-CG"
+              },
+              {
+                "nombre": "Lajas Blancas",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-EW-CEM-LB"
+              },
+              {
+                "nombre": "Manuel Ortega",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-EW-CEM-MO"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Comarca Ngäbe-Buglé",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Comarca",
+        "nivel": 2,
+        "codigo_oficial": "PA-NB",
+        "children": [
+          {
+            "nombre": "Müna",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Distrito",
+            "nivel": 3,
+            "codigo_oficial": "PA-NB-MUN",
+            "children": [
+              {
+                "nombre": "Cerro Iglesia",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-NB-MUN-CI"
+              },
+              {
+                "nombre": "Hato Corotú",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-NB-MUN-HC"
+              },
+              {
+                "nombre": "Krüa",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Corregimiento",
+                "nivel": 4,
+                "codigo_oficial": "PA-NB-MUN-KRUA"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

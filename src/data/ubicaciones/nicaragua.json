@@ -1,0 +1,311 @@
+[
+  {
+    "nombre": "Nicaragua",
+    "tipo_sistema": "PAIS",
+    "tipo_real": "País",
+    "nivel": 1,
+    "pais_codigo": "NI",
+    "codigo_oficial": "NI",
+    "children": [
+      {
+        "nombre": "Managua",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "NI-MN",
+        "children": [
+          {
+            "nombre": "Managua",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "NI-MN-MGA",
+            "children": [
+              {
+                "nombre": "Distrito I",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-MGA-D1"
+              },
+              {
+                "nombre": "Distrito II",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-MGA-D2"
+              },
+              {
+                "nombre": "Distrito III",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-MGA-D3"
+              },
+              {
+                "nombre": "Distrito IV",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-MGA-D4"
+              },
+              {
+                "nombre": "Distrito V",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-MGA-D5"
+              },
+              {
+                "nombre": "Distrito VI",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-MGA-D6"
+              },
+              {
+                "nombre": "Distrito VII",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Distrito",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-MGA-D7"
+              }
+            ]
+          },
+          {
+            "nombre": "Ciudad Sandino",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "NI-MN-CS",
+            "children": [
+              {
+                "nombre": "Zona 1",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Zona",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-CS-Z1"
+              },
+              {
+                "nombre": "Zona 2",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Zona",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-CS-Z2"
+              },
+              {
+                "nombre": "Zona 6",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Zona",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-CS-Z6"
+              }
+            ]
+          },
+          {
+            "nombre": "Tipitapa",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "NI-MN-TIP",
+            "children": [
+              {
+                "nombre": "Tipitapa",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-TIP-TIP"
+              },
+              {
+                "nombre": "San Benito",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Comarca",
+                "nivel": 4,
+                "codigo_oficial": "NI-MN-TIP-SBEN"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "León",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "NI-LE",
+        "children": [
+          {
+            "nombre": "León",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "NI-LE-LEO",
+            "children": [
+              {
+                "nombre": "Sutiaba",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-LE-LEO-SUT"
+              },
+              {
+                "nombre": "El Calvario",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-LE-LEO-CAL"
+              },
+              {
+                "nombre": "San Felipe",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-LE-LEO-SF"
+              }
+            ]
+          },
+          {
+            "nombre": "Nagarote",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "NI-LE-NAG",
+            "children": [
+              {
+                "nombre": "Nagarote",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-LE-NAG-NAG"
+              },
+              {
+                "nombre": "Puerto Sandino",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Comarca",
+                "nivel": 4,
+                "codigo_oficial": "NI-LE-NAG-PS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Granada",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "NI-GR",
+        "children": [
+          {
+            "nombre": "Granada",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "NI-GR-GRA",
+            "children": [
+              {
+                "nombre": "Xalteva",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-GR-GRA-XAL"
+              },
+              {
+                "nombre": "El Centro",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-GR-GRA-CEN"
+              },
+              {
+                "nombre": "La Islita",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-GR-GRA-ISL"
+              }
+            ]
+          },
+          {
+            "nombre": "Nandaime",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "NI-GR-NAN",
+            "children": [
+              {
+                "nombre": "Nandaime",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-GR-NAN-NAN"
+              },
+              {
+                "nombre": "Diriomo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Zona",
+                "nivel": 4,
+                "codigo_oficial": "NI-GR-NAN-DIR"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Masaya",
+        "tipo_sistema": "PROVINCIA",
+        "tipo_real": "Departamento",
+        "nivel": 2,
+        "codigo_oficial": "NI-MS",
+        "children": [
+          {
+            "nombre": "Masaya",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "NI-MS-MAS",
+            "children": [
+              {
+                "nombre": "Monimbó",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-MS-MAS-MON"
+              },
+              {
+                "nombre": "San Jerónimo",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-MS-MAS-SJ"
+              }
+            ]
+          },
+          {
+            "nombre": "Nindirí",
+            "tipo_sistema": "CANTON",
+            "tipo_real": "Municipio",
+            "nivel": 3,
+            "codigo_oficial": "NI-MS-NIN",
+            "children": [
+              {
+                "nombre": "Nindirí",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Barrio",
+                "nivel": 4,
+                "codigo_oficial": "NI-MS-NIN-NIN"
+              },
+              {
+                "nombre": "Masaya Km 26",
+                "tipo_sistema": "DISTRITO",
+                "tipo_real": "Comarca",
+                "nivel": 4,
+                "codigo_oficial": "NI-MS-NIN-KM26"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
