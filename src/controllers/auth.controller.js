@@ -233,17 +233,14 @@ const register = async (req, res) => {
 
     const backendTseEncontrado = tseResult?.found === true;
 
-    // El backend manda sobre el frontend
     if (backendTseEncontrado !== Boolean(tseEncontrado)) {
       return res.status(400).json({
-        error:
-          backendTseEncontrado
-            ? "La cédula sí existe en TSE. Vuelva a consultar antes de registrarse."
-            : "La cédula no existe en TSE. Vuelva a consultar antes de registrarse.",
+        error: backendTseEncontrado
+          ? "La cédula sí existe en TSE. Vuelva a consultar antes de registrarse."
+          : "La cédula no existe en TSE. Vuelva a consultar antes de registrarse.",
       });
     }
 
-    // Si existe en TSE, al menos validamos nombre y completamos dirección si viene vacía
     let finalName = String(name).trim();
     let finalAddress = String(address ?? "").trim();
 
@@ -423,13 +420,16 @@ const login = async (req, res) => {
 
     const mfaCode = await authService.createMFAToken(user.id);
 
-    await emailService.sendMFACode(user.email, mfaCode);
+    const emailResult = await emailService.sendMFACode(user.email, mfaCode);
 
     return res.status(200).json({
       mfaRequired: true,
       mfaType: "email",
       userId: user.id,
-      message: "Código MFA enviado al correo.",
+      message: emailResult?.simulated
+        ? "Código MFA simulado generado correctamente."
+        : "Código MFA enviado al correo.",
+      ...(emailResult?.simulated ? { devMfaCode: mfaCode } : {}),
     });
   } catch (error) {
     console.error("LOGIN ERROR:", error);
@@ -483,9 +483,9 @@ const verifyMFA = async (req, res) => {
   } catch (error) {
     await authService.logAudit(
       req.body.userId,
-      method === "totp" ? "TOTP_LOGIN_FAILED" : "MFA_FAILED",
+      req.body.method === "totp" ? "TOTP_LOGIN_FAILED" : "MFA_FAILED",
       "auth",
-      method === "totp"
+      req.body.method === "totp"
         ? "Código TOTP incorrecto"
         : "Código MFA incorrecto",
       req.ip
@@ -493,7 +493,7 @@ const verifyMFA = async (req, res) => {
 
     return res.status(401).json({
       error:
-        method === "totp"
+        req.body.method === "totp"
           ? "Código de Google Authenticator inválido"
           : "Código MFA inválido",
     });
@@ -615,7 +615,7 @@ const disableTotp = async (req, res) => {
 // GET SECURITY QUESTIONS
 // =============================
 
-const getSecurityQuestions = async (req, res) => {
+const getSecurityQuestions = async (_req, res) => {
   try {
     const questions = await authService.getSecurityQuestions();
 
@@ -947,7 +947,7 @@ const recoverUsername = async (req, res) => {
     return res.status(200).json({
       message: "Si el correo existe, se ha enviado el usuario.",
     });
-  } catch (error) {
+  } catch (_error) {
     return res.status(200).json({
       message: "Si el correo existe, se ha enviado el usuario.",
     });
