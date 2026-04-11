@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 
 // ======================================
 // FLAGS
@@ -11,31 +11,15 @@ const isRender =
 
 const emailTransportEnabled =
   process.env.EMAIL_TRANSPORT_ENABLED === "true" &&
-  !!process.env.EMAIL_USER &&
-  !!process.env.EMAIL_PASS;
+  !!process.env.RESEND_API_KEY &&
+  !!process.env.EMAIL_FROM;
 
-// ======================================
-// CONFIGURACIÓN TRANSPORTADOR
-// ======================================
-
-let transporter = null;
+const resend = emailTransportEnabled
+  ? new Resend(process.env.RESEND_API_KEY)
+  : null;
 
 if (emailTransportEnabled) {
-  transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
-    },
-  });
-
-  transporter.verify((error) => {
-    if (error) {
-      console.error("Error configuración correo:", error.message);
-    } else {
-      console.log("Servidor de correo listo");
-    }
-  });
+  console.log("Servicio de correo por Resend activado");
 } else {
   console.log(
     isRender
@@ -49,7 +33,7 @@ if (emailTransportEnabled) {
 // ======================================
 
 const sendMailOrSimulate = async (mailOptions, simulationLabel = "correo") => {
-  if (!emailTransportEnabled || !transporter) {
+  if (!emailTransportEnabled || !resend) {
     console.log(
       `[EMAIL SIMULADO] ${simulationLabel} -> ${mailOptions.to} | asunto: ${mailOptions.subject}`
     );
@@ -60,12 +44,39 @@ const sendMailOrSimulate = async (mailOptions, simulationLabel = "correo") => {
     };
   }
 
-  await transporter.sendMail(mailOptions);
+  try {
+    const response = await resend.emails.send({
+      from: mailOptions.from,
+      to: Array.isArray(mailOptions.to) ? mailOptions.to : [mailOptions.to],
+      subject: mailOptions.subject,
+      html: mailOptions.html,
+      text: mailOptions.text,
+    });
 
-  return {
-    sent: true,
-    simulated: false,
-  };
+    if (response?.error) {
+      console.error("Error Resend:", response.error);
+
+      return {
+        sent: false,
+        simulated: true,
+        error: response.error,
+      };
+    }
+
+    return {
+      sent: true,
+      simulated: false,
+      id: response?.data?.id ?? null,
+    };
+  } catch (error) {
+    console.error("Error enviando correo con Resend:", error.message);
+
+    return {
+      sent: false,
+      simulated: true,
+      error: error.message,
+    };
+  }
 };
 
 // ======================================
@@ -75,7 +86,7 @@ const sendMailOrSimulate = async (mailOptions, simulationLabel = "correo") => {
 const sendMFACode = async (email, code) => {
   try {
     const mailOptions = {
-      from: `"Granos La Tradición" <${process.env.EMAIL_USER}>`,
+      from: `"Granos La Tradición" <${process.env.EMAIL_FROM}>`,
       to: email,
       subject: "Código de verificación MFA",
       html: `
@@ -99,6 +110,7 @@ const sendMFACode = async (email, code) => {
         Si usted no solicitó este acceso, ignore este mensaje.
         </small>
       `,
+      text: `Su código de verificación MFA es: ${code}. Expira en 5 minutos.`,
     };
 
     const result = await sendMailOrSimulate(mailOptions, `MFA ${code}`);
@@ -127,7 +139,7 @@ const sendMFACode = async (email, code) => {
 const sendUsernameRecovery = async (email, username) => {
   try {
     const mailOptions = {
-      from: `"Granos La Tradición" <${process.env.EMAIL_USER}>`,
+      from: `"Granos La Tradición" <${process.env.EMAIL_FROM}>`,
       to: email,
       subject: "Recuperación de Usuario",
       html: `
@@ -150,6 +162,7 @@ const sendUsernameRecovery = async (email, username) => {
         Si usted no solicitó esta recuperación, ignore este mensaje.
         </small>
       `,
+      text: `Su nombre de usuario es: ${username}`,
     };
 
     return await sendMailOrSimulate(mailOptions, `USERNAME ${username}`);
@@ -169,11 +182,10 @@ const sendUsernameRecovery = async (email, username) => {
 
 const sendPasswordReset = async (email, token) => {
   try {
-    const resetLink =
-      `${process.env.FRONTEND_URL}/reset-password/${token}`;
+    const resetLink = `${process.env.FRONTEND_URL}/reset-password/${token}`;
 
     const mailOptions = {
-      from: `"Granos La Tradición" <${process.env.EMAIL_USER}>`,
+      from: `"Granos La Tradición" <${process.env.EMAIL_FROM}>`,
       to: email,
       subject: "Recuperación de contraseña",
       html: `
@@ -190,6 +202,7 @@ const sendPasswordReset = async (email, token) => {
              padding:12px 20px;
              text-decoration:none;
              border-radius:5px;
+             display:inline-block;
            ">
            Restablecer contraseña
         </a>
@@ -202,6 +215,7 @@ const sendPasswordReset = async (email, token) => {
         Si usted no solicitó este cambio ignore este correo.
         </small>
       `,
+      text: `Restablezca su contraseña aquí: ${resetLink}`,
     };
 
     return await sendMailOrSimulate(mailOptions, `RESET ${token}`);
@@ -222,7 +236,7 @@ const sendPasswordReset = async (email, token) => {
 const sendPasswordChangedNotification = async (email) => {
   try {
     const mailOptions = {
-      from: `"Granos La Tradición" <${process.env.EMAIL_USER}>`,
+      from: `"Granos La Tradición" <${process.env.EMAIL_FROM}>`,
       to: email,
       subject: "Contraseña cambiada",
       html: `
@@ -232,6 +246,7 @@ const sendPasswordChangedNotification = async (email) => {
 
         <p>Si usted no realizó este cambio contacte inmediatamente con soporte.</p>
       `,
+      text: "Su contraseña fue cambiada correctamente. Si usted no realizó este cambio contacte soporte.",
     };
 
     return await sendMailOrSimulate(mailOptions, "PASSWORD_CHANGED");
@@ -252,7 +267,7 @@ const sendPasswordChangedNotification = async (email) => {
 const sendAccountLockedNotification = async (email) => {
   try {
     const mailOptions = {
-      from: `"Granos La Tradición" <${process.env.EMAIL_USER}>`,
+      from: `"Granos La Tradición" <${process.env.EMAIL_FROM}>`,
       to: email,
       subject: "Cuenta bloqueada temporalmente",
       html: `
@@ -262,6 +277,7 @@ const sendAccountLockedNotification = async (email) => {
 
         <p>Intente nuevamente en unos minutos o utilice la recuperación de contraseña.</p>
       `,
+      text: "Su cuenta ha sido bloqueada temporalmente por múltiples intentos fallidos.",
     };
 
     return await sendMailOrSimulate(mailOptions, "ACCOUNT_LOCKED");
