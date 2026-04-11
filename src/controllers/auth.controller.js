@@ -383,6 +383,10 @@ const login = async (req, res) => {
       if (failed >= maxAttempts) {
         await authService.lockAccount(user.id);
 
+        try {
+          await emailService.sendAccountLockedNotification(user.email);
+        } catch (_e) {}
+
         const lockedUser = await authService.findUserByEmail(email);
 
         return res.status(403).json({
@@ -419,17 +423,17 @@ const login = async (req, res) => {
     }
 
     const mfaCode = await authService.createMFAToken(user.id);
-
     const emailResult = await emailService.sendMFACode(user.email, mfaCode);
+    const isDevelopment = process.env.NODE_ENV !== "production";
 
     return res.status(200).json({
       mfaRequired: true,
       mfaType: "email",
       userId: user.id,
       message: emailResult?.simulated
-        ? "Código MFA simulado generado correctamente."
+        ? "Código MFA generado en modo simulado."
         : "Código MFA enviado al correo.",
-      ...(emailResult?.simulated ? { devMfaCode: mfaCode } : {}),
+      ...(isDevelopment && emailResult?.simulated ? { devMfaCode: mfaCode } : {}),
     });
   } catch (error) {
     console.error("LOGIN ERROR:", error);
@@ -869,6 +873,13 @@ const changePassword = async (req, res) => {
 
     await authService.changePassword(userId, newPassword);
 
+    try {
+      const user = await authService.findUserById(userId);
+      if (user?.email) {
+        await emailService.sendPasswordChangedNotification(user.email);
+      }
+    } catch (_e) {}
+
     return res.status(200).json({
       message: "Contraseña actualizada correctamente",
     });
@@ -887,15 +898,38 @@ const forgotPassword = async (req, res) => {
   try {
     const { email } = req.body;
 
+    if (!email || !String(email).trim()) {
+      return res.status(400).json({
+        error: "El correo es obligatorio.",
+      });
+    }
+
+    const user = await authService.findUserByEmail(email);
+
+    if (!user) {
+      return res.status(200).json({
+        message: "Si el correo existe, se enviaron instrucciones de recuperación.",
+      });
+    }
+
     const token = await authService.createPasswordResetToken(email);
 
+    await emailService.sendPasswordReset(user.email, token);
+
+    await authService.logAudit(
+      user.id,
+      "PASSWORD_RESET_REQUESTED",
+      "auth",
+      "Solicitud de recuperación de contraseña",
+      req.ip
+    );
+
     return res.status(200).json({
-      message: "Token generado",
-      token,
+      message: "Si el correo existe, se enviaron instrucciones de recuperación.",
     });
-  } catch (error) {
-    return res.status(400).json({
-      error: error.message,
+  } catch (_error) {
+    return res.status(200).json({
+      message: "Si el correo existe, se enviaron instrucciones de recuperación.",
     });
   }
 };
@@ -915,7 +949,16 @@ const resetPassword = async (req, res) => {
       });
     }
 
+    const tokenData = await authService.validateResetToken(token);
+
     await authService.resetPasswordWithToken(token, newPassword);
+
+    try {
+      const user = await authService.findUserById(tokenData.user_id);
+      if (user?.email) {
+        await emailService.sendPasswordChangedNotification(user.email);
+      }
+    } catch (_e) {}
 
     return res.status(200).json({
       message: "Contraseña restablecida",
