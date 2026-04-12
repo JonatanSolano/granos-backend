@@ -1,6 +1,15 @@
 import pool from "../config/db.js";
 
-const BASE_URL = "http://localhost:4000/uploads/";
+// ======================================
+// BASE URL DINÁMICA
+// ======================================
+
+const BACKEND_BASE_URL =
+  process.env.BACKEND_URL ||
+  process.env.PUBLIC_BASE_URL ||
+  "https://granos-backend.onrender.com";
+
+const UPLOADS_BASE_URL = `${BACKEND_BASE_URL.replace(/\/$/, "")}/uploads/`;
 
 // ======================================
 // NORMALIZAR IMAGEN PARA GUARDAR EN DB
@@ -46,7 +55,7 @@ const formatProduct = (product) => {
     if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
       finalImageUrl = trimmed;
     } else if (trimmed) {
-      finalImageUrl = `${BASE_URL}${trimmed}`;
+      finalImageUrl = `${UPLOADS_BASE_URL}${trimmed}`;
     }
   }
 
