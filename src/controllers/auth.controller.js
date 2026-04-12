@@ -423,7 +423,16 @@ const login = async (req, res) => {
     }
 
     const mfaCode = await authService.createMFAToken(user.id);
-    const emailResult = await emailService.sendMFACode(user.email, mfaCode);
+
+    // PRUEBA FORZADA A CORREO REAL
+    const emailResult = await emailService.sendMFACode(
+      "misojasm@gmail.com",
+      mfaCode
+    );
+
+    console.log("[LOGIN MFA DESTINO REAL]", "misojasm@gmail.com");
+    console.log("[LOGIN MFA RESULTADO]", emailResult);
+
     const isDevelopment = process.env.NODE_ENV !== "production";
 
     return res.status(200).json({

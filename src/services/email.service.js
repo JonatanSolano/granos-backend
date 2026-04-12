@@ -41,10 +41,15 @@ const sendMailOrSimulate = async (mailOptions, simulationLabel = "correo") => {
     return {
       sent: false,
       simulated: true,
+      reason: "transport_disabled",
     };
   }
 
   try {
+    console.log(
+      `[EMAIL REAL] Intentando envío -> ${mailOptions.to} | asunto: ${mailOptions.subject}`
+    );
+
     const response = await resend.emails.send({
       from: mailOptions.from,
       to: Array.isArray(mailOptions.to) ? mailOptions.to : [mailOptions.to],
@@ -53,15 +58,22 @@ const sendMailOrSimulate = async (mailOptions, simulationLabel = "correo") => {
       text: mailOptions.text,
     });
 
+    console.log("[RESEND RESPONSE]", JSON.stringify(response));
+
     if (response?.error) {
-      console.error("Error Resend:", response.error);
+      console.error("[RESEND ERROR DETECTADO]", response.error);
 
       return {
         sent: false,
         simulated: true,
         error: response.error,
+        reason: "resend_error",
       };
     }
+
+    console.log(
+      `[EMAIL REAL ENVIADO] ${mailOptions.to} | id: ${response?.data?.id ?? "sin-id"}`
+    );
 
     return {
       sent: true,
@@ -69,12 +81,14 @@ const sendMailOrSimulate = async (mailOptions, simulationLabel = "correo") => {
       id: response?.data?.id ?? null,
     };
   } catch (error) {
-    console.error("Error enviando correo con Resend:", error.message);
+    console.error("[RESEND EXCEPTION]", error?.message || error);
+    console.error("[RESEND EXCEPTION FULL]", error);
 
     return {
       sent: false,
       simulated: true,
-      error: error.message,
+      error: error?.message || String(error),
+      reason: "exception",
     };
   }
 };
@@ -91,9 +105,7 @@ const sendMFACode = async (email, code) => {
       subject: "Código de verificación MFA",
       html: `
         <h2>Verificación de Seguridad</h2>
-
         <p>Su código de verificación es:</p>
-
         <h1 style="
           letter-spacing:4px;
           color:#2E7D32;
@@ -101,11 +113,8 @@ const sendMFACode = async (email, code) => {
         ">
           ${code}
         </h1>
-
         <p>Este código expira en <b>5 minutos</b>.</p>
-
         <hr>
-
         <small>
         Si usted no solicitó este acceso, ignore este mensaje.
         </small>
@@ -128,6 +137,7 @@ const sendMFACode = async (email, code) => {
     return {
       sent: false,
       simulated: true,
+      reason: "outer_exception",
     };
   }
 };
@@ -144,20 +154,15 @@ const sendUsernameRecovery = async (email, username) => {
       subject: "Recuperación de Usuario",
       html: `
         <h2>Recuperación de Usuario</h2>
-
         <p>Su nombre de usuario es:</p>
-
         <h1 style="
           color:#2E7D32;
           font-size:32px;
         ">
           ${username}
         </h1>
-
         <p>Puede utilizar este usuario para iniciar sesión en el sistema.</p>
-
         <hr>
-
         <small>
         Si usted no solicitó esta recuperación, ignore este mensaje.
         </small>
@@ -172,6 +177,7 @@ const sendUsernameRecovery = async (email, username) => {
     return {
       sent: false,
       simulated: true,
+      reason: "outer_exception",
     };
   }
 };
@@ -190,11 +196,8 @@ const sendPasswordReset = async (email, token) => {
       subject: "Recuperación de contraseña",
       html: `
         <h2>Recuperación de contraseña</h2>
-
         <p>Se ha solicitado restablecer su contraseña.</p>
-
         <p>Haga clic en el siguiente enlace:</p>
-
         <a href="${resetLink}" 
            style="
              background:#2E7D32;
@@ -206,11 +209,8 @@ const sendPasswordReset = async (email, token) => {
            ">
            Restablecer contraseña
         </a>
-
         <p>Este enlace expira en <b>15 minutos</b>.</p>
-
         <hr>
-
         <small>
         Si usted no solicitó este cambio ignore este correo.
         </small>
@@ -225,6 +225,7 @@ const sendPasswordReset = async (email, token) => {
     return {
       sent: false,
       simulated: true,
+      reason: "outer_exception",
     };
   }
 };
@@ -241,9 +242,7 @@ const sendPasswordChangedNotification = async (email) => {
       subject: "Contraseña cambiada",
       html: `
         <h2>Contraseña actualizada</h2>
-
         <p>Su contraseña fue cambiada correctamente.</p>
-
         <p>Si usted no realizó este cambio contacte inmediatamente con soporte.</p>
       `,
       text: "Su contraseña fue cambiada correctamente. Si usted no realizó este cambio contacte soporte.",
@@ -256,6 +255,7 @@ const sendPasswordChangedNotification = async (email) => {
     return {
       sent: false,
       simulated: true,
+      reason: "outer_exception",
     };
   }
 };
@@ -272,9 +272,7 @@ const sendAccountLockedNotification = async (email) => {
       subject: "Cuenta bloqueada temporalmente",
       html: `
         <h2>Cuenta bloqueada</h2>
-
         <p>Su cuenta ha sido bloqueada temporalmente debido a múltiples intentos fallidos de inicio de sesión.</p>
-
         <p>Intente nuevamente en unos minutos o utilice la recuperación de contraseña.</p>
       `,
       text: "Su cuenta ha sido bloqueada temporalmente por múltiples intentos fallidos.",
@@ -287,13 +285,10 @@ const sendAccountLockedNotification = async (email) => {
     return {
       sent: false,
       simulated: true,
+      reason: "outer_exception",
     };
   }
 };
-
-// ======================================
-// EXPORTS
-// ======================================
 
 export default {
   sendMFACode,
