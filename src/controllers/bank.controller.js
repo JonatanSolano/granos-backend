@@ -1,7 +1,9 @@
 import {
   validarTarjeta,
   procesarPago,
-  consultarTarjeta
+  consultarTarjeta,
+  obtenerTarjetasPrueba,
+  obtenerCuentasSinpePrueba
 } from "../external/bank.service.js";
 
 export async function validateCard(req, res) {
@@ -161,6 +163,50 @@ export async function getCardInfo(req, res) {
       mensaje: "Error interno al consultar tarjeta.",
       message: "Error interno al consultar tarjeta.",
       code: "INTERNAL_CARD_QUERY_ERROR",
+      detail: error.message
+    });
+  }
+}
+
+export async function getTestCards(_req, res) {
+  try {
+    const tarjetas = await obtenerTarjetasPrueba();
+
+    return res.status(200).json({
+      ok: true,
+      success: true,
+      mensaje: "Tarjetas de prueba obtenidas correctamente.",
+      message: "Tarjetas de prueba obtenidas correctamente.",
+      tarjetas
+    });
+  } catch (error) {
+    return res.status(500).json({
+      ok: false,
+      success: false,
+      mensaje: "Error obteniendo tarjetas de prueba.",
+      message: "Error obteniendo tarjetas de prueba.",
+      detail: error.message
+    });
+  }
+}
+
+export async function getTestSinpeAccounts(_req, res) {
+  try {
+    const cuentas = await obtenerCuentasSinpePrueba();
+
+    return res.status(200).json({
+      ok: true,
+      success: true,
+      mensaje: "Cuentas SINPE de prueba obtenidas correctamente.",
+      message: "Cuentas SINPE de prueba obtenidas correctamente.",
+      cuentas
+    });
+  } catch (error) {
+    return res.status(500).json({
+      ok: false,
+      success: false,
+      mensaje: "Error obteniendo cuentas SINPE de prueba.",
+      message: "Error obteniendo cuentas SINPE de prueba.",
       detail: error.message
     });
   }

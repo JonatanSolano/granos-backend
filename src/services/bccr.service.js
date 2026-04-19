@@ -2,150 +2,160 @@ import axios from "axios";
 
 const BCCR_BASE_URL =
   process.env.BCCR_BASE_URL ||
-  "https://sdd.bccr.fi.cr/IndicadoresEconomicos/api";
+  "https://apim.bccr.fi.cr/SDDE/api/Bccr.Ge.SDDE.Publico.Indicadores.API";
 
 const BCCR_TOKEN = process.env.BCCR_TOKEN;
 
-/**
- * Normaliza distintos posibles formatos de respuesta del API
- * para dejar un objeto estándar en el proyecto.
- */
-function normalizarTipoCambio(data) {
-  // Caso 1: el API ya devuelve compra/venta directos
-  if (
-    data &&
-    typeof data === "object" &&
-    data.compra !== undefined &&
-    data.venta !== undefined
-  ) {
-    return {
-      compra: Number(data.compra),
-      venta: Number(data.venta),
-      fecha: data.fecha || new Date().toISOString().split("T")[0],
-      fuente: "BCCR"
-    };
-  }
+// Códigos históricos usados para tipo de cambio
+const INDICADOR_COMPRA = process.env.BCCR_INDICADOR_COMPRA || "317";
+const INDICADOR_VENTA = process.env.BCCR_INDICADOR_VENTA || "318";
 
-  // Caso 2: viene una lista / arreglo de indicadores
-  if (Array.isArray(data)) {
-    const compraItem = data.find((item) =>
-      String(item?.nombre || item?.indicador || "")
-        .toLowerCase()
-        .includes("compra")
-    );
-
-    const ventaItem = data.find((item) =>
-      String(item?.nombre || item?.indicador || "")
-        .toLowerCase()
-        .includes("venta")
-    );
-
-    return {
-      compra: compraItem ? Number(compraItem.valor ?? compraItem.value ?? 0) : null,
-      venta: ventaItem ? Number(ventaItem.valor ?? ventaItem.value ?? 0) : null,
-      fecha:
-        compraItem?.fecha ||
-        ventaItem?.fecha ||
-        new Date().toISOString().split("T")[0],
-      fuente: "BCCR"
-    };
-  }
-
-  // Caso 3: el API devuelve un objeto con items internos
-  if (data?.items && Array.isArray(data.items)) {
-    return normalizarTipoCambio(data.items);
-  }
-
-  // Caso 4: fallback total
-  return {
-    compra: null,
-    venta: null,
-    fecha: new Date().toISOString().split("T")[0],
-    fuente: "BCCR",
-    raw: data
-  };
+function formatDateForBCCR(date = new Date()) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}/${month}/${day}`;
 }
 
-/**
- * Construye headers de autenticación.
- */
 function buildHeaders() {
   if (!BCCR_TOKEN) {
-    throw new Error(
-      "No se encontró BCCR_TOKEN en las variables de entorno."
-    );
+    throw new Error("No se encontró BCCR_TOKEN en las variables de entorno.");
   }
 
   return {
     Authorization: `Bearer ${BCCR_TOKEN}`,
-    Accept: "application/json"
+    Accept: "application/json",
+    "Content-Type": "application/json",
   };
 }
 
-/**
- * Intenta consultar el API del BCCR.
- *
- * NOTA:
- * Como el endpoint exacto puede variar según el estándar/API del portal,
- * aquí dejamos una estrategia flexible:
- *
- * 1) Primero intenta un endpoint directo configurable en .env
- * 2) Si no existe, usa un endpoint por defecto para tu integración
- *
- * Puedes ajustar BCCR_TIPO_CAMBIO_PATH cuando ya confirmes el path exacto.
- */
-export async function obtenerTipoCambioBCCR() {
-  const endpointPath =
-    process.env.BCCR_TIPO_CAMBIO_PATH || "/tipocambio";
+function pickSeriesArray(data) {
+  if (!data) return [];
 
-  const url = `${BCCR_BASE_URL}${endpointPath}`;
+  if (Array.isArray(data)) return data;
+  if (Array.isArray(data.items)) return data.items;
+  if (Array.isArray(data.data)) return data.data;
+  if (Array.isArray(data.series)) return data.series;
+  if (Array.isArray(data.Serie)) return data.Serie;
+  if (Array.isArray(data.Datos)) return data.Datos;
+
+  return [];
+}
+
+function parseValor(item) {
+  const candidates = [
+    item?.valor,
+    item?.Valor,
+    item?.value,
+    item?.Value,
+    item?.monto,
+    item?.Monto,
+  ];
+
+  for (const c of candidates) {
+    if (c !== undefined && c !== null && c !== "") {
+      const n = Number(String(c).replace(",", "."));
+      if (!Number.isNaN(n)) return n;
+    }
+  }
+
+  return null;
+}
+
+function parseFecha(item) {
+  return (
+    item?.fecha ||
+    item?.Fecha ||
+    item?.date ||
+    item?.Date ||
+    new Date().toISOString().split("T")[0]
+  );
+}
+
+async function consultarIndicador(codigo, fechaInicio, fechaFin) {
+  const url = `${BCCR_BASE_URL}/indicadoresEconomicos/${codigo}/series`;
+
+  const response = await axios.get(url, {
+    headers: buildHeaders(),
+    params: {
+      fechaInicio,
+      fechaFin,
+      idioma: "ES",
+    },
+    timeout: 15000,
+  });
+
+  const rows = pickSeriesArray(response.data);
+
+  if (!rows.length) {
+    return {
+      valor: null,
+      fecha: new Date().toISOString().split("T")[0],
+      raw: response.data,
+    };
+  }
+
+  // Tomamos el último valor disponible
+  const last = rows[rows.length - 1];
+
+  return {
+    valor: parseValor(last),
+    fecha: parseFecha(last),
+    raw: response.data,
+  };
+}
+
+export async function obtenerTipoCambioBCCR() {
+  const hoy = new Date();
+  const fechaFin = formatDateForBCCR(hoy);
+
+  // margen pequeño por si hoy no tiene dato aún
+  const ayer = new Date(hoy);
+  ayer.setDate(hoy.getDate() - 3);
+  const fechaInicio = formatDateForBCCR(ayer);
 
   try {
-    const response = await axios.get(url, {
-      headers: buildHeaders(),
-      timeout: 15000
-    });
-
-    const normalizado = normalizarTipoCambio(response.data);
+    const [compraRes, ventaRes] = await Promise.all([
+      consultarIndicador(INDICADOR_COMPRA, fechaInicio, fechaFin),
+      consultarIndicador(INDICADOR_VENTA, fechaInicio, fechaFin),
+    ]);
 
     return {
       ok: true,
-      ...normalizado
+      compra: compraRes.valor,
+      venta: ventaRes.valor,
+      fecha: ventaRes.fecha || compraRes.fecha,
+      fuente: "BCCR",
     };
   } catch (error) {
-    const status = error.response?.status || 500;
-    const detalle =
-      error.response?.data || error.message || "Error desconocido";
+    const status = error.response?.status || error.status || 500;
+    const detail =
+      error.response?.data ||
+      error.detail ||
+      error.message ||
+      "Error desconocido";
 
     throw {
       status,
       message: "No se pudo obtener el tipo de cambio desde BCCR.",
-      detail: detalle
+      detail,
     };
   }
 }
 
-/**
- * Método de respaldo para desarrollo/demo.
- * Útil si el API real no está listo todavía.
- */
 export async function obtenerTipoCambioMock() {
   return {
     ok: true,
     compra: 461.92,
     venta: 467.22,
     fecha: new Date().toISOString().split("T")[0],
-    fuente: "BCCR-MOCK"
+    fuente: "BCCR-MOCK",
   };
 }
 
-/**
- * Método principal del sistema:
- * - Si USE_BCCR_MOCK=true, devuelve datos simulados
- * - Si no, intenta el API real
- */
 export async function obtenerTipoCambio() {
-  const useMock = String(process.env.USE_BCCR_MOCK || "false").toLowerCase() === "true";
+  const useMock =
+    String(process.env.USE_BCCR_MOCK || "false").toLowerCase() === "true";
 
   if (useMock) {
     return obtenerTipoCambioMock();
