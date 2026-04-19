@@ -1,18 +1,81 @@
-import pool from "../config/bank.db.js";
+export async function consultarCuentaSinpe(telefono) {
+  const [rows] = await pool.query(
+    `
+    SELECT
+      id,
+      telefono,
+      nombre_titular,
+      saldo,
+      activo
+    FROM cuentas_sinpe
+    WHERE telefono = ?
+    LIMIT 1
+    `,
+    [telefono]
+  );
 
-function generarReferenciaBanco() {
-  return `BANK-${Date.now()}-${Math.floor(Math.random() * 100000)}`;
+  if (!rows.length) {
+    return {
+      ok: false,
+      mensaje: "La cuenta SINPE no existe."
+    };
+  }
+
+  return {
+    ok: true,
+    mensaje: "Cuenta SINPE encontrada.",
+    cuenta: rows[0]
+  };
 }
 
-async function registrarTransaccion({
-  numeroTarjeta,
-  tipoTransaccion,
+export async function procesarPagoSinpe({
+  telefono,
   monto,
-  referenciaBanco,
-  referenciaExterna,
-  estado,
-  detalle
+  referenciaExterna
 }) {
+  const consulta = await consultarCuentaSinpe(telefono);
+
+  if (!consulta.ok) {
+    return consulta;
+  }
+
+  const cuenta = consulta.cuenta;
+  const montoNumero = Number(monto);
+
+  if (!Number.isFinite(montoNumero) || montoNumero <= 0) {
+    return {
+      ok: false,
+      mensaje: "El monto del pago SINPE no es válido."
+    };
+  }
+
+  if (!cuenta.activo) {
+    return {
+      ok: false,
+      mensaje: "La cuenta SINPE está inactiva."
+    };
+  }
+
+  const saldoActual = Number(cuenta.saldo || 0);
+
+  if (saldoActual < montoNumero) {
+    return {
+      ok: false,
+      mensaje: "Saldo insuficiente en la cuenta SINPE."
+    };
+  }
+
+  const referenciaBanco = `SINPE-${Date.now()}-${Math.floor(Math.random() * 100000)}`;
+
+  await pool.query(
+    `
+    UPDATE cuentas_sinpe
+    SET saldo = saldo - ?
+    WHERE id = ?
+    `,
+    [montoNumero, cuenta.id]
+  );
+
   try {
     await pool.query(
       `
@@ -30,275 +93,22 @@ async function registrarTransaccion({
       VALUES (?, ?, ?, ?, ?, ?, ?, NOW())
       `,
       [
-        numeroTarjeta,
-        tipoTransaccion,
-        monto,
+        telefono,
+        "PAGO_SINPE",
+        montoNumero,
         referenciaBanco,
         referenciaExterna || null,
-        estado,
-        detalle || null
+        "APROBADA",
+        "Pago aprobado con SINPE"
       ]
     );
   } catch (_error) {
-    // No bloquea el pago si la bitácora falla
-  }
-}
-
-export async function consultarTarjeta(numeroTarjeta) {
-  const [rows] = await pool.query(
-    `
-    SELECT
-      id,
-      numero_tarjeta,
-      nombre_titular,
-      fecha_expiracion,
-      cvv,
-      tipo_tarjeta,
-      marca,
-      saldo,
-      limite_credito,
-      activo,
-      estado
-    FROM tarjetas
-    WHERE numero_tarjeta = ?
-    LIMIT 1
-    `,
-    [numeroTarjeta]
-  );
-
-  if (!rows.length) {
-    return {
-      ok: false,
-      mensaje: "La tarjeta no existe."
-    };
+    // no bloquea el flujo si falla la bitácora
   }
 
   return {
     ok: true,
-    mensaje: "Tarjeta encontrada.",
-    tarjeta: rows[0]
+    mensaje: "Pago aprobado con SINPE.",
+    referenciaBanco
   };
-}
-
-export async function validarTarjeta({
-  numeroTarjeta,
-  nombreTitular,
-  fechaExpiracion,
-  cvv
-}) {
-  const result = await consultarTarjeta(numeroTarjeta);
-
-  if (!result.ok) {
-    return result;
-  }
-
-  const tarjeta = result.tarjeta;
-
-  if (!tarjeta.activo || String(tarjeta.estado).toLowerCase() !== "activa") {
-    return {
-      ok: false,
-      mensaje: "La tarjeta se encuentra inactiva."
-    };
-  }
-
-  if (
-    String(tarjeta.nombre_titular).trim().toLowerCase() !==
-    String(nombreTitular).trim().toLowerCase()
-  ) {
-    return {
-      ok: false,
-      mensaje: "El nombre del titular no coincide."
-    };
-  }
-
-  if (String(tarjeta.fecha_expiracion).trim() !== String(fechaExpiracion).trim()) {
-    return {
-      ok: false,
-      mensaje: "La fecha de expiración no coincide."
-    };
-  }
-
-  if (String(tarjeta.cvv).trim() !== String(cvv).trim()) {
-    return {
-      ok: false,
-      mensaje: "El CVV no coincide."
-    };
-  }
-
-  return {
-    ok: true,
-    mensaje: "Tarjeta válida.",
-    tarjeta
-  };
-}
-
-export async function procesarPago({
-  numeroTarjeta,
-  nombreTitular,
-  fechaExpiracion,
-  cvv,
-  monto,
-  referenciaExterna
-}) {
-  const validacion = await validarTarjeta({
-    numeroTarjeta,
-    nombreTitular,
-    fechaExpiracion,
-    cvv
-  });
-
-  if (!validacion.ok) {
-    return validacion;
-  }
-
-  const tarjeta = validacion.tarjeta;
-  const montoNumero = Number(monto);
-
-  if (!Number.isFinite(montoNumero) || montoNumero <= 0) {
-    return {
-      ok: false,
-      mensaje: "El monto del pago no es válido."
-    };
-  }
-
-  const referenciaBanco = generarReferenciaBanco();
-
-  if (String(tarjeta.tipo_tarjeta).toLowerCase() === "debito") {
-    const saldoActual = Number(tarjeta.saldo || 0);
-
-    if (saldoActual < montoNumero) {
-      await registrarTransaccion({
-        numeroTarjeta,
-        tipoTransaccion: "PAGO_DEBITO",
-        monto: montoNumero,
-        referenciaBanco,
-        referenciaExterna,
-        estado: "RECHAZADA",
-        detalle: "Fondos insuficientes"
-      });
-
-      return {
-        ok: false,
-        mensaje: "Fondos insuficientes en la tarjeta de débito.",
-        referenciaBanco
-      };
-    }
-
-    await pool.query(
-      `
-      UPDATE tarjetas
-      SET saldo = saldo - ?
-      WHERE id = ?
-      `,
-      [montoNumero, tarjeta.id]
-    );
-
-    await registrarTransaccion({
-      numeroTarjeta,
-      tipoTransaccion: "PAGO_DEBITO",
-      monto: montoNumero,
-      referenciaBanco,
-      referenciaExterna,
-      estado: "APROBADA",
-      detalle: "Pago aprobado con tarjeta débito"
-    });
-
-    return {
-      ok: true,
-      mensaje: "Pago aprobado con tarjeta débito.",
-      referenciaBanco
-    };
-  }
-
-  if (String(tarjeta.tipo_tarjeta).toLowerCase() === "credito") {
-    const limiteActual = Number(tarjeta.limite_credito || 0);
-
-    if (limiteActual < montoNumero) {
-      await registrarTransaccion({
-        numeroTarjeta,
-        tipoTransaccion: "PAGO_CREDITO",
-        monto: montoNumero,
-        referenciaBanco,
-        referenciaExterna,
-        estado: "RECHAZADA",
-        detalle: "Límite insuficiente"
-      });
-
-      return {
-        ok: false,
-        mensaje: "Límite insuficiente en la tarjeta de crédito.",
-        referenciaBanco
-      };
-    }
-
-    await pool.query(
-      `
-      UPDATE tarjetas
-      SET limite_credito = limite_credito - ?
-      WHERE id = ?
-      `,
-      [montoNumero, tarjeta.id]
-    );
-
-    await registrarTransaccion({
-      numeroTarjeta,
-      tipoTransaccion: "PAGO_CREDITO",
-      monto: montoNumero,
-      referenciaBanco,
-      referenciaExterna,
-      estado: "APROBADA",
-      detalle: "Pago aprobado con tarjeta crédito"
-    });
-
-    return {
-      ok: true,
-      mensaje: "Pago aprobado con tarjeta crédito.",
-      referenciaBanco
-    };
-  }
-
-  return {
-    ok: false,
-    mensaje: "Tipo de tarjeta no soportado."
-  };
-}
-
-export async function obtenerTarjetasPrueba() {
-  const [rows] = await pool.query(
-    `
-    SELECT
-      numero_tarjeta AS numeroTarjeta,
-      nombre_titular AS nombreTitular,
-      fecha_expiracion AS fechaExpiracion,
-      cvv,
-      tipo_tarjeta AS tipoTarjeta,
-      marca,
-      estado,
-      activo
-    FROM tarjetas
-    WHERE activo = 1
-    ORDER BY id ASC
-    LIMIT 10
-    `
-  );
-
-  return rows;
-}
-
-export async function obtenerCuentasSinpePrueba() {
-  const [rows] = await pool.query(
-    `
-    SELECT
-      telefono,
-      nombre_titular AS nombreTitular,
-      saldo,
-      activo
-    FROM cuentas_sinpe
-    WHERE activo = 1
-    ORDER BY id ASC
-    LIMIT 10
-    `
-  );
-
-  return rows;
 }
