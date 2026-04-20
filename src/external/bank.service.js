@@ -57,7 +57,6 @@ export async function consultarTarjeta(numeroTarjeta) {
       marca,
       saldo,
       limite_credito,
-      activo,
       estado
     FROM tarjetas
     WHERE numero_tarjeta = ?
@@ -94,7 +93,7 @@ export async function validarTarjeta({
 
   const tarjeta = result.tarjeta;
 
-  if (!tarjeta.activo || String(tarjeta.estado).toLowerCase() !== "activa") {
+  if (String(tarjeta.estado || "").toLowerCase() !== "activa") {
     return {
       ok: false,
       mensaje: "La tarjeta se encuentra inactiva."
@@ -270,8 +269,7 @@ export async function consultarCuentaSinpe(telefono) {
       id,
       telefono,
       nombre_titular,
-      saldo,
-      activo
+      saldo
     FROM cuentas_sinpe
     WHERE telefono = ?
     LIMIT 1
@@ -289,7 +287,10 @@ export async function consultarCuentaSinpe(telefono) {
   return {
     ok: true,
     mensaje: "Cuenta SINPE encontrada.",
-    cuenta: rows[0]
+    cuenta: {
+      ...rows[0],
+      activo: true
+    }
   };
 }
 
@@ -311,13 +312,6 @@ export async function procesarPagoSinpe({
     return {
       ok: false,
       mensaje: "El monto del pago SINPE no es válido."
-    };
-  }
-
-  if (!cuenta.activo) {
-    return {
-      ok: false,
-      mensaje: "La cuenta SINPE está inactiva."
     };
   }
 
@@ -378,16 +372,18 @@ export async function obtenerTarjetasPrueba() {
       cvv,
       tipo_tarjeta AS tipoTarjeta,
       marca,
-      estado,
-      activo
+      estado
     FROM tarjetas
-    WHERE activo = 1
+    WHERE LOWER(estado) = 'activa'
     ORDER BY id ASC
     LIMIT 10
     `
   );
 
-  return rows;
+  return rows.map((row) => ({
+    ...row,
+    activo: true
+  }));
 }
 
 export async function obtenerCuentasSinpePrueba() {
@@ -396,14 +392,15 @@ export async function obtenerCuentasSinpePrueba() {
     SELECT
       telefono,
       nombre_titular AS nombreTitular,
-      saldo,
-      activo
+      saldo
     FROM cuentas_sinpe
-    WHERE activo = 1
     ORDER BY id ASC
     LIMIT 10
     `
   );
 
-  return rows;
+  return rows.map((row) => ({
+    ...row,
+    activo: true
+  }));
 }
