@@ -268,9 +268,11 @@ export async function consultarCuentaSinpe(telefono) {
     SELECT
       id,
       telefono,
+      cedula,
       nombre_titular,
-      saldo
-    FROM cuentas_sinpe
+      saldo,
+      activo
+    FROM sinpe_cuentas
     WHERE telefono = ?
     LIMIT 1
     `,
@@ -287,10 +289,7 @@ export async function consultarCuentaSinpe(telefono) {
   return {
     ok: true,
     mensaje: "Cuenta SINPE encontrada.",
-    cuenta: {
-      ...rows[0],
-      activo: true
-    }
+    cuenta: rows[0]
   };
 }
 
@@ -312,6 +311,13 @@ export async function procesarPagoSinpe({
     return {
       ok: false,
       mensaje: "El monto del pago SINPE no es válido."
+    };
+  }
+
+  if (!cuenta.activo) {
+    return {
+      ok: false,
+      mensaje: "La cuenta SINPE está inactiva."
     };
   }
 
@@ -338,7 +344,7 @@ export async function procesarPagoSinpe({
 
   await pool.query(
     `
-    UPDATE cuentas_sinpe
+    UPDATE sinpe_cuentas
     SET saldo = saldo - ?
     WHERE id = ?
     `,
@@ -391,16 +397,16 @@ export async function obtenerCuentasSinpePrueba() {
     `
     SELECT
       telefono,
+      cedula,
       nombre_titular AS nombreTitular,
-      saldo
-    FROM cuentas_sinpe
+      saldo,
+      activo
+    FROM sinpe_cuentas
+    WHERE activo = 1
     ORDER BY id ASC
     LIMIT 10
     `
   );
 
-  return rows.map((row) => ({
-    ...row,
-    activo: true
-  }));
+  return rows;
 }
