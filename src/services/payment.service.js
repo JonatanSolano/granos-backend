@@ -51,7 +51,6 @@ function buildError({
     paymentStatus: "rejected",
     estadoPedidoActualizado: null,
     orderStatusUpdated: null,
-    transactionReference: banco?.referenciaBanco || null,
     banco,
     bank: banco,
     httpStatus
@@ -67,8 +66,7 @@ export async function procesarPagoPedido({
   cvv,
   telefono,
   monto,
-  reqUserId = null,
-  reqUserRole = null
+  reqUserId = null
 }) {
   const connection = await pool.getConnection();
 
@@ -223,8 +221,6 @@ export async function procesarPagoPedido({
         });
       }
 
-      // En modo demo/proyecto académico NO bloqueamos por propiedad de la tarjeta.
-      // Solo validamos que la tarjeta exista, esté activa y pase la validación bancaria.
       bancoResult = await procesarPago({
         numeroTarjeta,
         nombreTitular,
@@ -262,7 +258,6 @@ export async function procesarPagoPedido({
         });
       }
 
-      // Igual que en tarjeta, en demo no bloqueamos por propiedad del número SINPE.
       bancoResult = await procesarPagoSinpe({
         telefono: telefonoFinal,
         monto: montoFinal,
@@ -288,20 +283,18 @@ export async function procesarPagoPedido({
       INSERT INTO payments
       (
         order_id,
+        payment_method,
+        payment_status,
         amount,
-        method,
-        status,
-        transaction_reference,
         created_at
       )
-      VALUES (?, ?, ?, ?, ?, NOW())
+      VALUES (?, ?, ?, ?, NOW())
       `,
       [
         orderId,
-        montoFinal,
         metodoPagoNormalizado,
         "approved",
-        bancoResult.referenciaBanco || null
+        montoFinal
       ]
     );
 
@@ -333,7 +326,6 @@ export async function procesarPagoPedido({
       paymentStatus: "approved",
       estadoPedidoActualizado: "Completado",
       orderStatusUpdated: "Completado",
-      transactionReference: bancoResult.referenciaBanco || null,
       banco: bancoResult,
       bank: bancoResult
     };
