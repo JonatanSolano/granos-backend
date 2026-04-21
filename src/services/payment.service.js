@@ -120,42 +120,6 @@ export async function procesarPagoPedido({
       });
     }
 
-    const [users] = await connection.execute(
-      `
-      SELECT id, cedula, phone, name, email
-      FROM users
-      WHERE id = ?
-      LIMIT 1
-      `,
-      [reqUserId]
-    );
-
-    if (users.length === 0) {
-      await connection.rollback();
-      return buildError({
-        mensaje: "Usuario autenticado no encontrado.",
-        code: "AUTH_USER_NOT_FOUND",
-        metodoPago,
-        orderId,
-        httpStatus: 404
-      });
-    }
-
-    const usuario = users[0];
-    const cedulaUsuario = String(usuario.cedula ?? "").trim();
-    const telefonoUsuario = String(usuario.phone ?? "").trim();
-
-    if (!cedulaUsuario) {
-      await connection.rollback();
-      return buildError({
-        mensaje: "El usuario no tiene cédula registrada para validar el medio de pago.",
-        code: "USER_WITHOUT_CEDULA",
-        metodoPago,
-        orderId,
-        httpStatus: 400
-      });
-    }
-
     const estadoActual = normalizarEstadoPedido(order);
     const estadosNoPermitidos = [
       "paid",
@@ -199,6 +163,7 @@ export async function procesarPagoPedido({
         code: "INVALID_PAYMENT_AMOUNT",
         metodoPago,
         orderId,
+        monto: montoFinal,
         httpStatus: 400
       });
     }
@@ -229,7 +194,21 @@ export async function procesarPagoPedido({
       });
     }
 
+    let bancoResult;
+
     if (metodoPagoNormalizado === "tarjeta") {
+      if (!numeroTarjeta || !nombreTitular || !fechaExpiracion || !cvv) {
+        await connection.rollback();
+        return buildError({
+          mensaje: "Todos los datos de la tarjeta son obligatorios.",
+          code: "MISSING_CARD_FIELDS",
+          metodoPago: "tarjeta",
+          orderId,
+          monto: montoFinal,
+          httpStatus: 400
+        });
+      }
+
       const tarjetaConsulta = await consultarTarjeta(numeroTarjeta);
 
       if (!tarjetaConsulta.ok) {
@@ -244,30 +223,37 @@ export async function procesarPagoPedido({
         });
       }
 
-      const cedulaTitularTarjeta = String(
-        tarjetaConsulta.tarjeta?.cedula_titular ?? ""
-      ).trim();
+      // En modo demo/proyecto académico NO bloqueamos por propiedad de la tarjeta.
+      // Solo validamos que la tarjeta exista, esté activa y pase la validación bancaria.
+      bancoResult = await procesarPago({
+        numeroTarjeta,
+        nombreTitular,
+        fechaExpiracion,
+        cvv,
+        monto: montoFinal,
+        referenciaExterna: `ORDER-${orderId}`
+      });
+    } else {
+      const telefonoFinal = String(telefono ?? numeroTarjeta ?? "").trim();
 
-      if (!cedulaTitularTarjeta || cedulaTitularTarjeta !== cedulaUsuario) {
+      if (!telefonoFinal) {
         await connection.rollback();
         return buildError({
-          mensaje: "La tarjeta no pertenece al usuario autenticado.",
-          code: "CARD_OWNERSHIP_MISMATCH",
-          metodoPago: "tarjeta",
+          mensaje: "Debe indicar el número SINPE.",
+          code: "MISSING_SINPE_PHONE",
+          metodoPago: "sinpe",
           orderId,
           monto: montoFinal,
-          httpStatus: 403
+          httpStatus: 400
         });
       }
-    }
 
-    if (metodoPagoNormalizado === "sinpe") {
-      const cuentaSinpeConsulta = await consultarCuentaSinpe(telefono);
+      const cuentaConsulta = await consultarCuentaSinpe(telefonoFinal);
 
-      if (!cuentaSinpeConsulta.ok) {
+      if (!cuentaConsulta.ok) {
         await connection.rollback();
         return buildError({
-          mensaje: cuentaSinpeConsulta.mensaje || "Número SINPE no registrado.",
+          mensaje: cuentaConsulta.mensaje || "Cuenta SINPE no encontrada.",
           code: "SINPE_ACCOUNT_NOT_FOUND",
           metodoPago: "sinpe",
           orderId,
@@ -276,118 +262,68 @@ export async function procesarPagoPedido({
         });
       }
 
-      const cedulaCuentaSinpe = String(
-        cuentaSinpeConsulta.cuenta?.cedula ?? ""
-      ).trim();
-
-      if (!cedulaCuentaSinpe || cedulaCuentaSinpe !== cedulaUsuario) {
-        await connection.rollback();
-        return buildError({
-          mensaje: "La cuenta SINPE no pertenece al usuario autenticado.",
-          code: "SINPE_OWNERSHIP_MISMATCH",
-          metodoPago: "sinpe",
-          orderId,
-          monto: montoFinal,
-          httpStatus: 403
-        });
-      }
-
-      if (telefonoUsuario && String(telefono).trim() !== telefonoUsuario) {
-        await connection.rollback();
-        return buildError({
-          mensaje: "El número SINPE no coincide con el teléfono registrado del usuario.",
-          code: "SINPE_PHONE_MISMATCH",
-          metodoPago: "sinpe",
-          orderId,
-          monto: montoFinal,
-          httpStatus: 403
-        });
-      }
-    }
-
-    let respuestaBanco;
-
-    if (metodoPagoNormalizado === "sinpe") {
-      respuestaBanco = await procesarPagoSinpe({
-        telefono,
-        monto: montoFinal,
-        referenciaExterna: `ORDER-${orderId}`
-      });
-    } else {
-      respuestaBanco = await procesarPago({
-        numeroTarjeta,
-        nombreTitular,
-        fechaExpiracion,
-        cvv,
+      // Igual que en tarjeta, en demo no bloqueamos por propiedad del número SINPE.
+      bancoResult = await procesarPagoSinpe({
+        telefono: telefonoFinal,
         monto: montoFinal,
         referenciaExterna: `ORDER-${orderId}`
       });
     }
 
-    const paymentStatus = respuestaBanco.ok ? "approved" : "rejected";
+    if (!bancoResult?.ok) {
+      await connection.rollback();
+      return buildError({
+        mensaje: bancoResult?.mensaje || "El banco rechazó el pago.",
+        code: "BANK_PAYMENT_REJECTED",
+        metodoPago: metodoPagoNormalizado,
+        orderId,
+        monto: montoFinal,
+        banco: bancoResult,
+        httpStatus: 400
+      });
+    }
 
     const [paymentInsert] = await connection.execute(
       `
       INSERT INTO payments
       (
         order_id,
-        payment_method,
-        payment_status,
-        amount
+        amount,
+        method,
+        status,
+        transaction_reference,
+        created_at
       )
-      VALUES (?, ?, ?, ?)
+      VALUES (?, ?, ?, ?, ?, NOW())
       `,
-      [orderId, metodoPagoNormalizado, paymentStatus, montoFinal]
+      [
+        orderId,
+        montoFinal,
+        metodoPagoNormalizado,
+        "approved",
+        bancoResult.referenciaBanco || null
+      ]
     );
 
     const paymentId = paymentInsert.insertId;
 
-    if (!respuestaBanco.ok) {
-      await connection.commit();
-
-      return buildError({
-        mensaje: respuestaBanco.mensaje || "El pago fue rechazado.",
-        code:
-          metodoPagoNormalizado === "sinpe"
-            ? "SINPE_PAYMENT_REJECTED"
-            : "CARD_PAYMENT_REJECTED",
-        metodoPago: metodoPagoNormalizado,
-        orderId,
-        paymentId,
-        monto: montoFinal,
-        banco: respuestaBanco,
-        httpStatus: 400
-      });
-    }
-
-    if ("status" in order) {
-      await connection.execute(
-        `
-        UPDATE orders
-        SET status = ?
-        WHERE id = ?
-        `,
-        ["Completado", orderId]
-      );
-    } else if ("order_status" in order) {
-      await connection.execute(
-        `
-        UPDATE orders
-        SET order_status = ?
-        WHERE id = ?
-        `,
-        ["Completado", orderId]
-      );
-    }
+    await connection.execute(
+      `
+      UPDATE orders
+      SET status = 'Completado'
+      WHERE id = ?
+      `,
+      [orderId]
+    );
 
     await connection.commit();
 
     return {
       ok: true,
       success: true,
-      mensaje: respuestaBanco.mensaje || "Pago procesado correctamente.",
-      message: respuestaBanco.mensaje || "Pago procesado correctamente.",
-      code: "PAYMENT_PROCESSED",
+      mensaje: bancoResult.mensaje || "Pago procesado correctamente.",
+      message: bancoResult.mensaje || "Pago procesado correctamente.",
+      code: "PAYMENT_SUCCESS",
       metodoPago: metodoPagoNormalizado,
       paymentMethod: metodoPagoNormalizado,
       orderId,
@@ -397,20 +333,30 @@ export async function procesarPagoPedido({
       paymentStatus: "approved",
       estadoPedidoActualizado: "Completado",
       orderStatusUpdated: "Completado",
-      transactionReference: respuestaBanco.referenciaBanco || `ORDER-${orderId}`,
-      banco: respuestaBanco,
-      bank: respuestaBanco
+      transactionReference: bancoResult.referenciaBanco || null,
+      banco: bancoResult,
+      bank: bancoResult
     };
   } catch (error) {
     await connection.rollback();
-    throw error;
+    return buildError({
+      mensaje: "Error interno al procesar el pago del pedido.",
+      code: "INTERNAL_ORDER_PAYMENT_ERROR",
+      metodoPago,
+      orderId,
+      monto,
+      httpStatus: 500,
+      banco: {
+        detail: error.message
+      }
+    });
   } finally {
     connection.release();
   }
 }
 
 export async function obtenerDatosPruebaPago() {
-  const [tarjetas, sinpe] = await Promise.all([
+  const [tarjetas, cuentasSinpe] = await Promise.all([
     obtenerTarjetasPrueba(),
     obtenerCuentasSinpePrueba()
   ]);
@@ -420,10 +366,9 @@ export async function obtenerDatosPruebaPago() {
     success: true,
     mensaje: "Datos de prueba obtenidos correctamente.",
     message: "Datos de prueba obtenidos correctamente.",
-    code: "PAYMENT_TEST_DATA_OK",
     data: {
       tarjetas,
-      sinpe
+      sinpe: cuentasSinpe
     }
   };
 }
